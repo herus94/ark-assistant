@@ -1,0 +1,474 @@
+[
+  {
+    "card_id": 101,
+    "name": "Species Diversity*",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      3
+    ],
+    "conservation_points": [
+      5,
+      3,
+      2
+    ],
+    "requirements_text": "Requires different animal category icons in your zoo"
+  },
+  {
+    "card_id": 102,
+    "name": "Habitat Diveristy*",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      3
+    ],
+    "conservation_points": [
+      5,
+      3,
+      2
+    ],
+    "requirements_text": "Requires different continent icons in your zoo"
+  },
+  {
+    "card_id": 103,
+    "name": "Africa",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      3,
+      2
+    ],
+    "requirements_text": "Requires Africa icons in your zoo"
+  },
+  {
+    "card_id": 104,
+    "name": "Americas",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      3,
+      2
+    ],
+    "requirements_text": "Requires Americas icons in your zoo"
+  },
+  {
+    "card_id": 105,
+    "name": "Australia",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires Australia icons in your zoo"
+  },
+  {
+    "card_id": 106,
+    "name": "Asia",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      3,
+      2
+    ],
+    "requirements_text": "Requires Asia icons in your zoo"
+  },
+  {
+    "card_id": 107,
+    "name": "Europe",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires Europe icons in your zoo"
+  },
+  {
+    "card_id": 108,
+    "name": "Primates",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires primate icons in your zoo"
+  },
+  {
+    "card_id": 109,
+    "name": "Reptiles",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires reptile icons in your zoo"
+  },
+  {
+    "card_id": 110,
+    "name": "Predators",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires predators icons in your zoo"
+  },
+  {
+    "card_id": 111,
+    "name": "Herbavores",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires herbavore icons in your zoo"
+  },
+  {
+    "card_id": 112,
+    "name": "Birds",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      5,
+      4,
+      2
+    ],
+    "requirements_text": "Requires bird icons in your zoo"
+  },
+  {
+    "card_id": 113,
+    "name": "Bavarian Forest National Park",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 aminal with a Europe icon into the wild."
+  },
+  {
+    "card_id": 114,
+    "name": "Yosemite National Park",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 aminal with an Americas icon into the wild."
+  },
+  {
+    "card_id": 115,
+    "name": "Angthong National Park",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 aminal with an Asia icon into the wild."
+  },
+  {
+    "card_id": 116,
+    "name": "Serengeti National Park",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 aminal with an Africa icon into the wild."
+  },
+  {
+    "card_id": 117,
+    "name": "Blue Mountains National Park",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 aminal with an Australia icon into the wild."
+  },
+  {
+    "card_id": 118,
+    "name": "Sananna",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 predator into the wild."
+  },
+  {
+    "card_id": 119,
+    "name": "Low Mountain Range",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 bird into the wild."
+  },
+  {
+    "card_id": 120,
+    "name": "Bamboo Forest",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 herbavore into the wild."
+  },
+  {
+    "card_id": 121,
+    "name": "Sea Cave",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 reptile into the wild."
+  },
+  {
+    "card_id": 122,
+    "name": "Jungle",
+    "activity_required": "Release",
+    "size_required": [
+      3
+    ],
+    "conservation_points": [
+      5,
+      4,
+      3
+    ],
+    "requirements_text": "Release 1 primate into the wild."
+  },
+  {
+    "card_id": 123,
+    "name": "Bird Breeding Program",
+    "activity_required": "Partnership",
+    "size_required": [],
+    "conservation_points": [
+      2,
+      1,
+      2
+    ],
+    "requirements_text": "Requires 1 bird and a partner zoo of the same continent."
+  },
+  {
+    "card_id": 124,
+    "name": "Predator Breeding Program",
+    "activity_required": "Partnership",
+    "size_required": [],
+    "conservation_points": [
+      2,
+      1,
+      2
+    ],
+    "requirements_text": "Requires 1 predator and a partner zoo of the same continent."
+  },
+  {
+    "card_id": 125,
+    "name": "Reptile Breeding Program",
+    "activity_required": "Partnership",
+    "size_required": [],
+    "conservation_points": [
+      2,
+      1,
+      2
+    ],
+    "requirements_text": "Requires 1 reptile and a partner zoo of the same continent."
+  },
+  {
+    "card_id": 126,
+    "name": "Herbavore Breeding Program",
+    "activity_required": "Partnership",
+    "size_required": [],
+    "conservation_points": [
+      2,
+      1,
+      2
+    ],
+    "requirements_text": "Requires 1 herbavore and a partner zoo of the same continent."
+  },
+  {
+    "card_id": 127,
+    "name": "Primate Breeding Program",
+    "activity_required": "Partnership",
+    "size_required": [],
+    "conservation_points": [
+      2,
+      1,
+      2
+    ],
+    "requirements_text": "Requires 1 primate and a partner zoo of the same continent."
+  },
+  {
+    "card_id": 128,
+    "name": "Aquatic",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      4,
+      3,
+      2
+    ],
+    "requirements_text": "Requires water icons in your zoo."
+  },
+  {
+    "card_id": 129,
+    "name": "Geological",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      3,
+      2
+    ],
+    "conservation_points": [
+      4,
+      3,
+      2
+    ],
+    "requirements_text": "Requires rock icons in your zoo."
+  },
+  {
+    "card_id": 130,
+    "name": "Small Animals",
+    "activity_required": "Collection",
+    "size_required": [
+      8,
+      5,
+      2
+    ],
+    "conservation_points": [
+      4,
+      3,
+      2
+    ],
+    "requirements_text": "Requires small animals in your zoo."
+  },
+  {
+    "card_id": 131,
+    "name": "Large Animals*",
+    "activity_required": "Collection",
+    "size_required": [
+      4,
+      3,
+      2
+    ],
+    "conservation_points": [
+      4,
+      3,
+      2
+    ],
+    "requirements_text": "Requires large animals in your zoo."
+  },
+  {
+    "card_id": 132,
+    "name": "Research",
+    "activity_required": "Collection",
+    "size_required": [
+      5,
+      4,
+      2
+    ],
+    "conservation_points": [
+      4,
+      3,
+      2
+    ],
+    "requirements_text": "Requires research icons in your zoo."
+  }
+]

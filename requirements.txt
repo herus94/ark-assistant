@@ -1,0 +1,17 @@
+fastapi
+google-genai
+graphifyy
+langchain
+langchain-core
+langchain-google-genai
+langchain-groq
+langchain-mcp-adapters
+langchain-protocol
+langgraph
+mcp
+psycopg2-binary
+pydantic
+pydantic_core
+pydantic-settings
+python-dotenv
+uvicorn

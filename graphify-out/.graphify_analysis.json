@@ -1,0 +1,75 @@
+{
+  "communities": {
+    "0": [
+      "Associazione"
+    ],
+    "1": [
+      "Attrattiva"
+    ],
+    "2": [
+      "Carte Animale"
+    ],
+    "3": [
+      "Carte Azione"
+    ],
+    "4": [
+      "Mappa"
+    ],
+    "5": [
+      "Pausa Caff\u00e8"
+    ],
+    "6": [
+      "Progetti di Conservazione"
+    ],
+    "7": [
+      "Punteggio"
+    ],
+    "8": [
+      "Recinti"
+    ],
+    "9": [
+      "Reputazione"
+    ],
+    "10": [
+      "Sponsor"
+    ],
+    "11": [
+      "Token X"
+    ],
+    "12": [
+      "Tracciato della Conservazione"
+    ],
+    "13": [
+      "Volontari"
+    ],
+    "14": [
+      "Zoo"
+    ]
+  },
+  "cohesion": {
+    "0": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0
+  },
+  "gods": [],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "no_signal",
+      "question": null,
+      "why": "Not enough signal to generate questions. This usually means the corpus has no AMBIGUOUS edges, no bridge nodes, no INFERRED relationships, and all communities are tightly cohesive. Add more files or run with --mode deep to extract richer edges."
+    }
+  ]
+}

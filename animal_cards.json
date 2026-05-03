@@ -1,0 +1,5141 @@
+[
+    {
+        "card_id": 401,
+        "name": "CHEETAH",
+        "latin_name": "Acinonyx jubatus",
+        "cost": 17,
+        "types": [
+            "Predator",
+            "Predator"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sprint 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 402,
+        "name": "LION",
+        "latin_name": "Panthera leo",
+        "cost": 16,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Predator": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pack"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 403,
+        "name": "LEOPARD",
+        "latin_name": "Panthera pardus",
+        "cost": 20,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 4"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 404,
+        "name": "CARACAL",
+        "latin_name": "Caracal caracal",
+        "cost": 9,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 2"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 405,
+        "name": "FENNEC FOX",
+        "latin_name": "Vulpes zerda",
+        "cost": 8,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 406,
+        "name": "SIBERIAN TIGER",
+        "latin_name": "Panthera tigris altaica",
+        "cost": 30,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Asia": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 10,
+            "conservation": 2,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 407,
+        "name": "SUMATRAN TIGER",
+        "latin_name": "Panthera tigris sumatrae",
+        "cost": 26,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 2
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 2,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 408,
+        "name": "SLOTH BEAR",
+        "latin_name": "Melursus ursinus",
+        "cost": 14,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost:Association"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 409,
+        "name": "SUN BEAR",
+        "latin_name": "Helarctos malayanus",
+        "cost": 16,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Action: Association"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 410,
+        "name": "YELLOW-THROATED MARTEN",
+        "latin_name": "Martes flavigula",
+        "cost": 7,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 1"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 411,
+        "name": "GRIZZLY BEAR",
+        "latin_name": "Ursus arctos horribilis",
+        "cost": 22,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Predator": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Inventive\nFull-throated"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 412,
+        "name": "JAGUAR",
+        "latin_name": "Panthera onca",
+        "cost": 16,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 4"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 413,
+        "name": "COUGAR",
+        "latin_name": "Puma concolor",
+        "cost": 10,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Jumping 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 414,
+        "name": "SOUTH AMERICAN COATI",
+        "latin_name": "Nasua nasua",
+        "cost": 11,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Inventive 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 415,
+        "name": "RACCOON",
+        "latin_name": "Procyon lotor",
+        "cost": 11,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost:Association"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 416,
+        "name": "EURASIAN BROWN BEAR",
+        "latin_name": "Ursus arctos arctos",
+        "cost": 20,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Association\nFull-throated"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 417,
+        "name": "WOLF",
+        "latin_name": "Canis lupus",
+        "cost": 12,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pack"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 418,
+        "name": "EURASIAN LYNX",
+        "latin_name": "Lynx lynx",
+        "cost": 11,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Europe": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Iconic Animal: Europe"
+        ],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 419,
+        "name": "EUROPEAN BADGER",
+        "latin_name": "Meles meles",
+        "cost": 5,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Aminals"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 420,
+        "name": "STOAT",
+        "latin_name": "Mustela erminea",
+        "cost": 4,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 1"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 421,
+        "name": "NEW ZEALAND FUR SEAL",
+        "latin_name": "Arctocephalus forsteri",
+        "cost": 17,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Full-throated"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 422,
+        "name": "AUSTRALIAN SEA LION",
+        "latin_name": "Neophoca cinerea",
+        "cost": 18,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 3"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 423,
+        "name": "NEW ZEALAND SEA LION",
+        "latin_name": "Phocarctos hookeri",
+        "cost": 17,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pack"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 424,
+        "name": "AUSTRALIAN DINGO",
+        "latin_name": "Canis lupus dingo",
+        "cost": 13,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pack"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 425,
+        "name": "TASMANIAN DEVIL",
+        "latin_name": "Sarcophilus harrisii",
+        "cost": 11,
+        "types": [
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pouch 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 426,
+        "name": "AFRICAN BUSH ELEPHANT",
+        "latin_name": "Loxodonta africana",
+        "cost": 36,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Africa x2"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Resistance"
+        ],
+        "bonuses": {
+            "appeal": 10,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 427,
+        "name": "WHITE RHINOCEROS",
+        "latin_name": "Ceratotherium simum",
+        "cost": 24,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Assertion"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 428,
+        "name": "GIRAFFE",
+        "latin_name": "Giraffa",
+        "cost": 16,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Sponsors"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 429,
+        "name": "GREVY'S ZEBRA",
+        "latin_name": "Equus grevyi",
+        "cost": 12,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Africa": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Sponsors\nFlock Animal 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 430,
+        "name": "PYGMY HIPPOPOTAMUS",
+        "latin_name": "Choeropsis liberiensis",
+        "cost": 15,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Action: Sponsors"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 431,
+        "name": "ASIAN ELEPHANT",
+        "latin_name": "Elephas maximus",
+        "cost": 33,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Asia x2"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Resistance"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 432,
+        "name": "INDIAN RHINOCEROS",
+        "latin_name": "Rhinoceros unicornis",
+        "cost": 25,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Assertion"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 433,
+        "name": "GIANT PANDA",
+        "latin_name": "Ailuropoda melanoleuca",
+        "cost": 27,
+        "types": [
+            "Herbivore",
+            "Bear"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 10,
+            "conservation": 2,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 434,
+        "name": "RED PANDA",
+        "latin_name": "Ailurus fulgens",
+        "cost": 16,
+        "types": [
+            "Herbivore",
+            "Bear"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Sponsors"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 435,
+        "name": "MALAYAN TAPIR",
+        "latin_name": "Tapirus indicus",
+        "cost": 17,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Digging 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 436,
+        "name": "AMERICAN BISON",
+        "latin_name": "Bos bison",
+        "cost": 18,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas x2"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Americas": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Iconic Animal: Americas"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 437,
+        "name": "MUSKOX",
+        "latin_name": "Ovibos moschatus",
+        "cost": 13,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sponsor Magnet"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 438,
+        "name": "REINDEER",
+        "latin_name": "Rangifer tarandus",
+        "cost": 12,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Flock Animal 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 439,
+        "name": "LAMA",
+        "latin_name": "Lama glama",
+        "cost": 10,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Flock Animal 2"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 440,
+        "name": "MOUNTAIN TAPIR",
+        "latin_name": "Tapirus pinchaque",
+        "cost": 15,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Digging 2"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 441,
+        "name": "EUROPEAN BISON",
+        "latin_name": "Bos bonasus",
+        "cost": 19,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Europe x2"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sponsor Magnet"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 442,
+        "name": "MOOSE",
+        "latin_name": "Alces alces",
+        "cost": 19,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Herbivore": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Sponsors\nFlock Animal 4"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 443,
+        "name": "RED DEER",
+        "latin_name": "Cervus elaphus",
+        "cost": 12,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Flock Animal 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 444,
+        "name": "ALPINE IBEX",
+        "latin_name": "Capra ibex",
+        "cost": 10,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Jumping 2"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 445,
+        "name": "CRESTED PORCUPINE",
+        "latin_name": "Hystric cristata",
+        "cost": 8,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Digging 2"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 446,
+        "name": "DUGONG",
+        "latin_name": "Dugong dugon",
+        "cost": 25,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Australia x2"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 2
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Digging 4"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 447,
+        "name": "RED KANGAROO",
+        "latin_name": "Macropus rufus",
+        "cost": 23,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pouch 2\nFlock Animal 4"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 448,
+        "name": "KOALA",
+        "latin_name": "Phascolarctos cinereus",
+        "cost": 21,
+        "types": [
+            "Herbivore",
+            "Bear"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pouch 2"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 449,
+        "name": "PLATYPUS",
+        "latin_name": "Ornithorhynchus anatinus",
+        "cost": 10,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 450,
+        "name": "COMMON WOMBAT",
+        "latin_name": "Vombatus ursinus",
+        "cost": 9,
+        "types": [
+            "Herbivore"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pouch 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 451,
+        "name": "PROBOSCIS MONKEY",
+        "latin_name": "Nasalis larvatus",
+        "cost": 32,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Primate": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Dominance"
+        ],
+        "bonuses": {
+            "appeal": 10,
+            "conservation": 2,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 452,
+        "name": "SENEGAL BUSHBABY",
+        "latin_name": "Galago senegalensis",
+        "cost": 10,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Africa": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Iconic Animal: Africa"
+        ],
+        "bonuses": {
+            "appeal": 1,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 453,
+        "name": "COLLARED MANGABEY",
+        "latin_name": "Cercocebus torquatus",
+        "cost": 20,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Action: Cards"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 454,
+        "name": "RING-TAILED LEMUR",
+        "latin_name": "Lemur catta",
+        "cost": 12,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 455,
+        "name": "MANTLED GUEREZA",
+        "latin_name": "Colobus guereza",
+        "cost": 13,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 456,
+        "name": "BARBARY MACAQUE",
+        "latin_name": "Macaca sylvanus",
+        "cost": 13,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pilfering 1"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 457,
+        "name": "MANDRILL",
+        "latin_name": "Mandrillus sphinx",
+        "cost": 28,
+        "types": [
+            "Primate",
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Primate": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Cards"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 2,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 458,
+        "name": "JAPANCES MACAQUE",
+        "latin_name": "Macaca fuscata",
+        "cost": 18,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pilfering 2"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 459,
+        "name": "RED-SHANKED DOUC",
+        "latin_name": "Pygathrix nemaeus",
+        "cost": 17,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Inventive"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 460,
+        "name": "DUSKY-LEAF MONKEY",
+        "latin_name": "Trachypithecus obscurus",
+        "cost": 12,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 461,
+        "name": "HORSFIELD'S TARSIER",
+        "latin_name": "Cephalopachus bancanus",
+        "cost": 14,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Jumping 4"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 2
+        }
+    },
+    {
+        "card_id": 462,
+        "name": "NORTHERN PLAINS GRAY LANGUR",
+        "latin_name": "Semnopithecus entellus",
+        "cost": 13,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Jumping 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 463,
+        "name": "PANAMANIAN WHITE-FACED CAPUCHIN",
+        "latin_name": "Cebus imitator",
+        "cost": 11,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pilfering 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 464,
+        "name": "BROWN SPIDER MONKEY",
+        "latin_name": "Ateles hybridus",
+        "cost": 17,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Inventive"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 465,
+        "name": "GOLDEN LION TAMARIN",
+        "latin_name": "Leontopithecus rosalia",
+        "cost": 10,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 466,
+        "name": "BOLIVIAN RED HOWLER",
+        "latin_name": "Alouatta sara",
+        "cost": 12,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Cards"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 467,
+        "name": "ECUADORIAN SQUIRELL MONKEY",
+        "latin_name": "Saimiri macrodon",
+        "cost": 12,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 468,
+        "name": "COTTON-TOP TAMARIN",
+        "latin_name": "Saguinus oedipus",
+        "cost": 15,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 1,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 469,
+        "name": "NILE CROCODILE",
+        "latin_name": "Crocodylus niloticus",
+        "cost": 13,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {
+                "Reptile": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Snapping 2"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 470,
+        "name": "WESTERN GREEN MAMBA",
+        "latin_name": "Dendroaspis viridis",
+        "cost": 13,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 471,
+        "name": "AFRICAN SPURRED TORTOISE",
+        "latin_name": "Centrochelys sulcata",
+        "cost": 22,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 472,
+        "name": "ROCK MONITOR",
+        "latin_name": "Varanus albigularis",
+        "cost": 12,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 473,
+        "name": "COMMON AGAMA",
+        "latin_name": "Agama agama",
+        "cost": 9,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 2"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 474,
+        "name": "INDIAN ROCK PYTHON",
+        "latin_name": "Python molurus",
+        "cost": 14,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Reptile": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Constriction"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 475,
+        "name": "KING COBRA",
+        "latin_name": "Ophiophagus hannah",
+        "cost": 13,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hypnosis 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 476,
+        "name": "KOMODO DRAGON",
+        "latin_name": "Varanus komodoensis",
+        "cost": 14,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Asia": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Iconic Animal: Asia"
+        ],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 477,
+        "name": "VEILED CHAMELEON",
+        "latin_name": "Chamaeleo calyptratus",
+        "cost": 14,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Snapping 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 478,
+        "name": "CHINESE WATER DRAGON",
+        "latin_name": "Physignathus cocincinus",
+        "cost": 8,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 2"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 479,
+        "name": "AMERICAN ALLIGATOR",
+        "latin_name": "Alligator mississippiensis",
+        "cost": 18,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Snapping 1"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 480,
+        "name": "BROAD-SNOUTED CAIMAN",
+        "latin_name": "Caiman latirostris",
+        "cost": 16,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Snapping 1"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 481,
+        "name": "GALAPAGOS GIANT TORTOISE",
+        "latin_name": "Chelonoidis nigra",
+        "cost": 30,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Americas": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sunbathing 4"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 2,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 482,
+        "name": "ANACONDA",
+        "latin_name": "Eunectes murinus",
+        "cost": 13,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Constriction"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 483,
+        "name": "BOA CONSTRICTOR",
+        "latin_name": "Boa constrictor",
+        "cost": 16,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Constriction"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 484,
+        "name": "EUROPEAN POND TURTLE",
+        "latin_name": "Emys orbicularis",
+        "cost": 9,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 485,
+        "name": "COMMON EUROPEAN ADDER",
+        "latin_name": "Vipera berus",
+        "cost": 10,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hypnosis 3"
+        ],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 486,
+        "name": "COMMON WALL LIZARD",
+        "latin_name": "Podarcis muralis",
+        "cost": 4,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 487,
+        "name": "EUROPEAN GRASS SNAKE",
+        "latin_name": "Natrix natrix",
+        "cost": 8,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Clever"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 488,
+        "name": "SLOW WORM",
+        "latin_name": "Anguis fragilis",
+        "cost": 4,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 489,
+        "name": "SALTWATER CROCODILE",
+        "latin_name": "Crocodylus porosus",
+        "cost": 23,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Snapping 2"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 490,
+        "name": "GOULD'S MONITOR",
+        "latin_name": "Varanus gouldii",
+        "cost": 15,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 491,
+        "name": "FRILLED LIZARD",
+        "latin_name": "Chlamydosaurus kingii",
+        "cost": 12,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sprint 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 492,
+        "name": "INLAND TAIPAN",
+        "latin_name": "Oxyuranus microlepidotus",
+        "cost": 10,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 2"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 493,
+        "name": "THORNY DEVIL",
+        "latin_name": "Moloch horridus",
+        "cost": 6,
+        "types": [
+            "Reptile"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 2,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 494,
+        "name": "AFRICAN OSTRICH",
+        "latin_name": "Struthio camelus",
+        "cost": 20,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sprint 2"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 495,
+        "name": "SECRETARY BIRD",
+        "latin_name": "Sagittarius serpentarius",
+        "cost": 14,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 496,
+        "name": "MARABOU",
+        "latin_name": "Leptoptilos crumenifer",
+        "cost": 10,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 2"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 497,
+        "name": "LESSER FLAMINGO",
+        "latin_name": "Phoeniconaias minor",
+        "cost": 15,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 1"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 498,
+        "name": "SHOEBILL",
+        "latin_name": "Balaeniceps rex",
+        "cost": 9,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Science": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 499,
+        "name": "CINEREOUS VULTURE",
+        "latin_name": "Aegypius monachus",
+        "cost": 16,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 3"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 500,
+        "name": "LONG-BILLED VULTURE",
+        "latin_name": "Gyps indicus",
+        "cost": 20,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 3"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 1,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 501,
+        "name": "INDIAN PEAFOWL",
+        "latin_name": "Pavo cristatus",
+        "cost": 18,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 2"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 502,
+        "name": "GREAT HORNBILL",
+        "latin_name": "Buceros bicornis",
+        "cost": 13,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Build"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 503,
+        "name": "SNOWY OWL",
+        "latin_name": "Bubo scandiacus",
+        "cost": 11,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Bird": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Perception 4"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 504,
+        "name": "ANDEAN CONDOR",
+        "latin_name": "Vultur gryphus",
+        "cost": 17,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 4"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 505,
+        "name": "BALD EAGLE",
+        "latin_name": "Haliaeetus leucocephalus",
+        "cost": 23,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Determination"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 506,
+        "name": "KING VULTURE",
+        "latin_name": "Sarcoramphus papa",
+        "cost": 12,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Bird": 3
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scavenging 5"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 507,
+        "name": "GREATER RHEA",
+        "latin_name": "Rhea americana",
+        "cost": 12,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sprint 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 508,
+        "name": "SCARLET MACAW",
+        "latin_name": "Ara macao",
+        "cost": 16,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 3"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 509,
+        "name": "GOLDEN EAGLE",
+        "latin_name": "Aquila chrysaetos",
+        "cost": 20,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Determination"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 510,
+        "name": "WHITE STORK",
+        "latin_name": "Ciconia ciconia",
+        "cost": 9,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Build"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 511,
+        "name": "GREATER FLAMINGO",
+        "latin_name": "Phoenicopterus roseus",
+        "cost": 16,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 1"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 512,
+        "name": "EURASIAN EAGLE-OWL",
+        "latin_name": "Bubo bubo",
+        "cost": 10,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Perception 4"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 513,
+        "name": "BARN OWL",
+        "latin_name": "Tyto alba",
+        "cost": 12,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Perception 4"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 514,
+        "name": "EMU",
+        "latin_name": "Dromaius novaehollandiae",
+        "cost": 22,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 5,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {
+                "Australia": 2
+            },
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Peacocking"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 515,
+        "name": "AUSTRALIAN PELICAN",
+        "latin_name": "Pelecaus conspicillatus",
+        "cost": 13,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 2
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Action: Build"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 516,
+        "name": "NORHTERN CASSOWARY",
+        "latin_name": "Casuarius unappendiculatus",
+        "cost": 12,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": true,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Multiplier: Build"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 517,
+        "name": "LAUGHING KOOKABURRA",
+        "latin_name": "Dacelo novaeguineae",
+        "cost": 9,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Iconic Animal: Australia"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 518,
+        "name": "LESSER BIRD-OF-PARADISE",
+        "latin_name": "Paradisaea minor",
+        "cost": 15,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 519,
+        "name": "(DOMESTIC) GOAT",
+        "latin_name": "Capra aegagrus hircus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 520,
+        "name": "SHEEP",
+        "latin_name": "Ovis gmelini aries",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 521,
+        "name": "HORSE",
+        "latin_name": "Equus caballus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 522,
+        "name": "DONKEY",
+        "latin_name": "Equus asinus asinus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal\nInventive"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 523,
+        "name": "DOMESTIC RABBIT",
+        "latin_name": "Oryctolagus cuniculus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 524,
+        "name": "MANGALICA",
+        "latin_name": "Sus scrofa form. domestica",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 525,
+        "name": "GUINEA PIG",
+        "latin_name": "Cavia porcellus form. domestica",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal\nDigging 1"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 526,
+        "name": "ALPACA",
+        "latin_name": "Vicugna pacos",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 527,
+        "name": "COCONUT LORIKEET",
+        "latin_name": "Trichoglossus haematodus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 528,
+        "name": "BENNETT'S WALLABY",
+        "latin_name": "Macropus rufogriseus",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal\nPouch 1"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 529,
+        "name": "MAGNIFICENT SEA ANEMONE",
+        "latin_name": "Heteractis magnifica",
+        "cost": 6,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Mark"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 530,
+        "name": "ORANGE CLOWNFISH",
+        "latin_name": "Amphiprion percula",
+        "cost": 10,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "none"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 531,
+        "name": "PALETTE SURGEONFISH",
+        "latin_name": "Paracanthurus hepatus",
+        "cost": 9,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Trade"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 532,
+        "name": "ZOOPLANKTON",
+        "latin_name": null,
+        "cost": 4,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "none"
+        ],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Sea Animal Magnet"
+        ],
+        "bonuses": {
+            "appeal": 1,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 533,
+        "name": "BLACKSIDE HAWKFISH",
+        "latin_name": "Paracirrhites forsteri",
+        "cost": 11,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Posturing 1"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 534,
+        "name": "SOUTHERN BLUE-RINGED OCTOPUS",
+        "latin_name": "Hapalochlaena maculosa",
+        "cost": 12,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 1 / Inventive"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 535,
+        "name": "SHARKNOSE GOBY",
+        "latin_name": "Elacatinus evelynae",
+        "cost": 7,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Symbiosis, Helpful"
+        ],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 536,
+        "name": "LONHORN COWFISH",
+        "latin_name": "Lactoria cornuta",
+        "cost": 9,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost: Sponsors"
+        ],
+        "bonuses": {
+            "appeal": 4,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 537,
+        "name": "BLACKBAR TRIGGERFISH",
+        "latin_name": "Rhinecanthus aculeatus",
+        "cost": 14,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": true,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Constriction / Clever"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 538,
+        "name": "DEVIL FIREFISH",
+        "latin_name": "Pterois miles",
+        "cost": 16,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 1 /Inventive"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 539,
+        "name": "AMERICAN WHITESPOTTED FILEFISH",
+        "latin_name": "Cantherhines macrocerus",
+        "cost": 12,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 540,
+        "name": "GUINEAFOWL PUFFER",
+        "latin_name": "Arothron meleagris",
+        "cost": 15,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Venom 1 / Inventive"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 541,
+        "name": "BLUESPOTTED RIBBONTAIL RAY",
+        "latin_name": "Taeniura lymma",
+        "cost": 16,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Digging 1"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 542,
+        "name": "HUMPHEAD WRASSE",
+        "latin_name": "Cheilinus undulatus",
+        "cost": 22,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": true,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Extra Shift"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 543,
+        "name": "COASTAL MANTA RAY",
+        "latin_name": "Mobula alfredi",
+        "cost": 23,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Glide 3"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 544,
+        "name": "CARIBBEAN REEF SHARK",
+        "latin_name": "Carcharhinus perezi",
+        "cost": 20,
+        "types": [
+            "Sea Animal",
+            "Predator"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Shark Attack 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 545,
+        "name": "LONGCOMB SAWFISH",
+        "latin_name": "Pristis zijsron",
+        "cost": 21,
+        "types": [
+            "Sea Animal 2"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Cut Down"
+        ],
+        "bonuses": {
+            "appeal": 9,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 546,
+        "name": "SAND TIGER SHARK",
+        "latin_name": "Carcharias taurus",
+        "cost": 32,
+        "types": [
+            "Sea Animal",
+            "Predator"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Shark Attack 2"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 547,
+        "name": "MEDITERRANEAN RAINBOW WRASSE",
+        "latin_name": "Corris julis",
+        "cost": 8,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 0,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Symbiosis"
+        ],
+        "bonuses": {
+            "appeal": 3,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 548,
+        "name": "SHORT-SNOUTED SEAHORSE",
+        "latin_name": "Hippocampus hippocampus",
+        "cost": 7,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Camouflage, Pouch 1"
+        ],
+        "bonuses": {
+            "appeal": 2,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 549,
+        "name": "COMMON OCTOPUS",
+        "latin_name": "Octopus vulgaris",
+        "cost": 9,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Camouflage"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 550,
+        "name": "COMPASS JELLYFISH",
+        "latin_name": "Chrysaora hysoscella",
+        "cost": 10,
+        "types": [
+            "Sea Animal"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 3,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Glide 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 551,
+        "name": "LOGGERHEAD SEA TURTLE",
+        "latin_name": "Caretta caretta",
+        "cost": 23,
+        "types": [
+            "Sea Animal",
+            "Reptile"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scuba Dive X"
+        ],
+        "bonuses": {
+            "appeal": 8,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 552,
+        "name": "GREEN SEA TURTLE",
+        "latin_name": "Chelonia mydas",
+        "cost": 17,
+        "types": [
+            "Sea Animal",
+            "Reptile"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Scuba Dive X"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 553,
+        "name": "TAMBAQUI",
+        "latin_name": "Colossoma macropomum",
+        "cost": 15,
+        "types": [
+            "Sea Animal",
+            "Herbivore"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 1,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Adapt 1"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 554,
+        "name": "AFRICAN PENGUIN",
+        "latin_name": "Spheniscus demersus",
+        "cost": 18,
+        "types": [
+            "Sea Animal",
+            "Bird"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 2,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Adapt 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 555,
+        "name": "GOLDEN SNUB-NOSED MONKEY",
+        "latin_name": "Rhinopithecus roxellana",
+        "cost": 18,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Asia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Pilfering 1 / Sprint 1"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 556,
+        "name": "WOLVERINE",
+        "latin_name": "Gulo gulo",
+        "cost": 15,
+        "types": [
+            "Predator",
+            "Bear"
+        ],
+        "continents": [
+            "Europe"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Boost Association"
+        ],
+        "bonuses": {
+            "appeal": 5,
+            "conservation": 0,
+            "reputation": 1
+        }
+    },
+    {
+        "card_id": 557,
+        "name": "VIETNAMESE POT-BELLIED PIG",
+        "latin_name": "Sus scrofa f. domestica",
+        "cost": 7,
+        "types": [
+            "Pet"
+        ],
+        "continents": [],
+        "enclosure": {
+            "size": 0,
+            "rock": 0,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Petting Zoo Animal"
+        ],
+        "bonuses": {
+            "appeal": 0,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 558,
+        "name": "NORTHERN MURIQUI",
+        "latin_name": "Brachyteles hypoxanthus",
+        "cost": 16,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Americas"
+        ],
+        "enclosure": {
+            "size": 4,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": true,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Monkey Gang"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 1,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 559,
+        "name": "COQUEREL'S SIFAKA",
+        "latin_name": "Propithecus coquereli",
+        "cost": 17,
+        "types": [
+            "Primate"
+        ],
+        "continents": [
+            "Africa"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 0
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Monkey Gang, Jumping 2"
+        ],
+        "bonuses": {
+            "appeal": 7,
+            "conservation": 0,
+            "reputation": 0
+        }
+    },
+    {
+        "card_id": 560,
+        "name": "BRAHMINY KITE",
+        "latin_name": "Haliastur indus",
+        "cost": 12,
+        "types": [
+            "Bird"
+        ],
+        "continents": [
+            "Australia"
+        ],
+        "enclosure": {
+            "size": 3,
+            "rock": 1,
+            "water": 1
+        },
+        "requirements": {
+            "symbols": {},
+            "reputation": 0,
+            "partner_zoo": false,
+            "university": false,
+            "level_2_card_required": null
+        },
+        "abilities": [
+            "Hunter 2"
+        ],
+        "bonuses": {
+            "appeal": 6,
+            "conservation": 0,
+            "reputation": 0
+        }
+    }
+]

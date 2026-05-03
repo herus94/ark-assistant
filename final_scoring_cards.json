@@ -1,0 +1,263 @@
+[
+  {
+    "card_id": 1,
+    "name": "Large Animal Zoo*",
+    "required_tiers": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 2,
+    "name": "Small Animal Zoo",
+    "required_tiers": [
+      3,
+      6,
+      8,
+      10
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 3,
+    "name": "Research Zoo*",
+    "required_tiers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 4,
+    "name": "Architectural Zoo",
+    "required_tiers": [],
+    "points_tiers": [],
+    "additional_details": "1 point each for connecting all water, rock or border spaces; 1 point for covering the zoo map"
+  },
+  {
+    "card_id": 5,
+    "name": "Conservation Zoo*",
+    "required_tiers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 6,
+    "name": "Naturalists' Zoo",
+    "required_tiers": [
+      6,
+      12,
+      18,
+      24
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 7,
+    "name": "Favorite Zoo",
+    "required_tiers": [
+      6,
+      9,
+      12,
+      15
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 8,
+    "name": "Sponsored Zoo*",
+    "required_tiers": [
+      3,
+      6,
+      8,
+      10
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 9,
+    "name": "Biodiverse Zoo (Diverse Species Zoo)*",
+    "required_tiers": [],
+    "points_tiers": [],
+    "additional_details": "Max 4 CP"
+  },
+  {
+    "card_id": 10,
+    "name": "Climbing Park*",
+    "required_tiers": [
+      1,
+      3,
+      5,
+      3,
+      5
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 11,
+    "name": "Aquatic Park*",
+    "required_tiers": [
+      2,
+      4,
+      6,
+      4,
+      6
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 12,
+    "name": "Designer Zoo",
+    "required_tiers": [
+      4,
+      6,
+      7,
+      8
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 13,
+    "name": "Specialized Habitat Zoo",
+    "required_tiers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 14,
+    "name": "Specialized Species Zoo",
+    "required_tiers": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 15,
+    "name": "Catered Picnic Areas",
+    "required_tiers": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": "Do not have to be adjacent"
+  },
+  {
+    "card_id": 16,
+    "name": "Accessible Zoo",
+    "required_tiers": [
+      4,
+      7,
+      10,
+      12
+    ],
+    "points_tiers": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "additional_details": null
+  },
+  {
+    "card_id": 17,
+    "name": "International Zoo",
+    "required_tiers": [],
+    "points_tiers": [],
+    "additional_details": "Max. 4 CP"
+  }
+]

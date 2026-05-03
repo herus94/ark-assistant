@@ -1,0 +1,51 @@
+services:
+  # Database di destinazione (Dashboard)
+  db_destinazione:
+    image: ankane/pgvector:v0.5.1
+    container_name: db_destinazione
+    restart: always
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db_destinazione
+    ports:
+      - "5433:5432"
+    volumes:
+      - data:/var/lib/postgresql/data
+    networks:
+      - sync_network
+
+  # Interfaccia Grafica pgAdmin
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin_container_dest
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "7070:80"  # Accedi da browser su http://localhost:7070
+    depends_on:
+      - db_destinazione
+    networks:
+      - sync_network
+
+  ark-rag-app:
+    build: .
+    container_name: ark_rag_container
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_KEY}
+      - DB_URI=postgresql://user:password@db_destinazione:5432/db_destinazione
+    depends_on:
+      - db_destinazione
+    networks:
+      - sync_network
+
+networks:
+  sync_network:
+    driver: bridge
+
+volumes:
+  data:

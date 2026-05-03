@@ -1,0 +1,912 @@
+[
+  {
+    "card_id": 201,
+    "name": "Science Lab",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "Draw a card Deck/Reputation",
+    "continuing_bonus": "Income: 1 card D/R",
+    "end_game_bonus": "3/6 Research Icons : 1/2 CP"
+  },
+  {
+    "card_id": 202,
+    "name": "Spokesperson",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Play Research Icon : 1 Reputation",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 203,
+    "name": "Veterinarian",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "1/2/3 Universities : $2/$5/$10",
+    "continuing_bonus": null,
+    "end_game_bonus": "3 Universities : 1 CP"
+  },
+  {
+    "card_id": 204,
+    "name": "Science Museum",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "# Research icons : $2 each",
+    "continuing_bonus": "Play Research Icon : 1 CP",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 205,
+    "name": "Gorilla Field Research",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "2 Reputation; 1 CP",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 206,
+    "name": "Medical Breakthrough",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "# Conservation Projects : 2 Appeal each",
+    "continuing_bonus": "Income: Gain 1 CP",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 207,
+    "name": "Basic Research*",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "1 CP per 2 different continent/animal icons; others get $2 for each CP you earn",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 208,
+    "name": "Science Library*",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "# Research icons : 1 Appeal each",
+    "continuing_bonus": "ANY Research icon played : $2",
+    "end_game_bonus": "5 different Animal icons : 1 CP"
+  },
+  {
+    "card_id": 209,
+    "name": "Technology Institute",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "1 X-token",
+    "continuing_bonus": "Income: 1 X-token",
+    "end_game_bonus": "3 Universities : 1 CP"
+  },
+  {
+    "card_id": 210,
+    "name": "Expert on the Americas",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Americas"
+    ],
+    "instant_bonus": "# Americas icons : 1 Appeal each",
+    "continuing_bonus": "Play Americas icon : free Kiosk",
+    "end_game_bonus": "5 Kiosks : 1 CP"
+  },
+  {
+    "card_id": 211,
+    "name": "Expert on Europe",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Europe"
+    ],
+    "instant_bonus": "# Europe icons : 1 Appeal each",
+    "continuing_bonus": "Play Europe icon : free 1-space enclosure",
+    "end_game_bonus": "5 1-space enclosures : 1 CP"
+  },
+  {
+    "card_id": 212,
+    "name": "Expert on Australia",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Australia"
+    ],
+    "instant_bonus": "# Australia icons : 1 Appeal each",
+    "continuing_bonus": "Play Australia icon : pouch 1 card from hand for 2 Appeal",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 213,
+    "name": "Expert on Asia",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Asia"
+    ],
+    "instant_bonus": "# Asia icons : 1 Appeal each",
+    "continuing_bonus": "Play Asia icon : free Pavilion",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 214,
+    "name": "Expert on Africa",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Africa"
+    ],
+    "instant_bonus": "# Africa icons : 1 Appeal each",
+    "continuing_bonus": "Play Africa icon : Clever (move an action card to space 1)",
+    "end_game_bonus": "# X-tokens : 1 Appeal each"
+  },
+  {
+    "card_id": 215,
+    "name": "Global Breeding Program",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": null,
+    "continuing_bonus": "Discard token from card to use as any icon when playing a base conservation project.",
+    "end_game_bonus": "5 supported conservation projects : 1 CP"
+  },
+  {
+    "card_id": 216,
+    "name": "Talented Communicator",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "1 Associate ",
+    "continuing_bonus": null,
+    "end_game_bonus": "9 Reputation : 1 CP"
+  },
+  {
+    "card_id": 217,
+    "name": "Engineer",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": null,
+    "continuing_bonus": "Build a second building of the same kind each time you use the Build action.",
+    "end_game_bonus": "Zoo map completely covered : 5 Appeal"
+  },
+  {
+    "card_id": 218,
+    "name": "Breeding Program",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": null,
+    "continuing_bonus": "Discard token from card to use as any icon when playing a base conservation project.",
+    "end_game_bonus": "5 supported conservation projects : 1 CP"
+  },
+  {
+    "card_id": 219,
+    "name": "Diversity Researcher",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "# water & rock icons : $2 each",
+    "continuing_bonus": "May cover rock & water spaces; ignore rock & water requirements",
+    "end_game_bonus": "each pair water & rock icons : 2 Appeal"
+  },
+  {
+    "card_id": 220,
+    "name": "Federal Grants",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "3",
+    "continuing_bonus": "Income: $3",
+    "end_game_bonus": "9 Reputation : 1 CP"
+  },
+  {
+    "card_id": 221,
+    "name": "Archeologist",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "When border space placement bonus taken, gain another free placement bonus",
+    "end_game_bonus": "All border spaces covered : 1 CP"
+  },
+  {
+    "card_id": 222,
+    "name": "Release of Patents",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Research icons : 1 CP (other players gain $2 per CP gained)",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 223,
+    "name": "Science Institute",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "2 Research"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 224,
+    "name": "Migration Recordings",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "1 X-token",
+    "continuing_bonus": "Each Release into the Wild conservation project : 1 CP; you may support each CP more than once.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 225,
+    "name": "Quarantine Lab*",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "1 X-token",
+    "continuing_bonus": "Venom, Constriction, Hypnosis & Pilfering do not affect you",
+    "end_game_bonus": "5 different Continent icons : 1 CP"
+  },
+  {
+    "card_id": 226,
+    "name": "Foreign Institute*",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Research"
+    ],
+    "instant_bonus": "2 Reputation",
+    "continuing_bonus": null,
+    "end_game_bonus": "5 different Continent icons : 1 CP"
+  },
+  {
+    "card_id": 227,
+    "name": "Waza Special Assignment*",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Choose Small or Large Animals; reveal cards from deck and add the first of the chosen type to hand",
+    "continuing_bonus": "You can no longer play the other (unchosen) animal type; gain 2 Appeal per Small, or 4 Appeal per Large Animal played.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 228,
+    "name": "Waza Small Animals Program",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Small Animals played : $2 each",
+    "continuing_bonus": "Each time you play only Small Animals with the Animals action, play another SA and take 1 from the display",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 229,
+    "name": "Expert in Small Animals",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Small Animals played : 1 Appeal each",
+    "continuing_bonus": "Cost to play Small Animals is reduced by $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 230,
+    "name": "Expert in Large Animals",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Large Animals played : 2 Appeal each",
+    "continuing_bonus": "Cost to play Large Animals is reduced by $4",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 231,
+    "name": "Sponsorship: Primates",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Primate icons : 1 Appeal each",
+    "continuing_bonus": "Income: gain $3/$6/$9 per 1/3/5 Primates in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 232,
+    "name": "Sponsorship: Reptiles",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Reptile icons : 1 Appeal each",
+    "continuing_bonus": "Income: gain $3/$6/$9 per 1/3/5 Reptiles in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 233,
+    "name": "Sponsorship: Vultures",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Bird icons : 1 Appeal each",
+    "continuing_bonus": "Income: gain $3/$6/$9 per 1/3/5 Bird in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 234,
+    "name": "Sponsorship: Lions",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Predator icons : 1 Appeal each",
+    "continuing_bonus": "Income: gain $3/$6/$9 per 1/3/5 Predator in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 235,
+    "name": "Sponsorship: Elephants",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "# Herbavore icons : 1 Appeal each",
+    "continuing_bonus": "Income: gain $3/$6/$9 per 1/3/5 Herbavore in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 236,
+    "name": "Primatologist",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Primate"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Primate icon is played in ANY zoo, gain $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 237,
+    "name": "Herpetologist",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Reptile"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Reptile icon is played in ANY zoo, gain $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 238,
+    "name": "Ornithologist",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Bird"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Bird icon is played in ANY zoo, gain $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 239,
+    "name": "Expert in Predators",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Predator"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Predator icon is played in ANY zoo, gain $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 240,
+    "name": "Expert in Herbavores",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Herbivore"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Herbavore icon is played in ANY zoo, gain $3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 241,
+    "name": "Hydrologist",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Water"
+    ],
+    "instant_bonus": "# Water icons : 1 Appeal each",
+    "continuing_bonus": "Gain $1 for each space covered next to water",
+    "end_game_bonus": "All Water spaces connected : 1 CP"
+  },
+  {
+    "card_id": 242,
+    "name": "Geologist",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Rock"
+    ],
+    "instant_bonus": "for every 2 Rock icons : 3 Appeal",
+    "continuing_bonus": "Gain $1 for each space covered next to rocks",
+    "end_game_bonus": "All Rock spaces connected : 1 CP"
+  },
+  {
+    "card_id": 243,
+    "name": "Meerkat Den",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Herbivore + 1 Rock"
+    ],
+    "instant_bonus": "Place the Meerkat Den special tile next to at least 1 Rock",
+    "continuing_bonus": "Gain 2 Appeal each time you play a Herbivore icon",
+    "end_game_bonus": "6 Herbivore icons : 1 CP"
+  },
+  {
+    "card_id": 244,
+    "name": "Penguin Pool",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Bird + 1 Water"
+    ],
+    "instant_bonus": "Place the Penguin Pool special tile next to at least 1 Water",
+    "continuing_bonus": "Gain 2 Appeal each time you play a Bird icon",
+    "end_game_bonus": "6 Bird icons : 1 CP"
+  },
+  {
+    "card_id": 245,
+    "name": "Aquarium",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "2 Water"
+    ],
+    "instant_bonus": "Place the Aquarium special tile next to at least 2 Water",
+    "continuing_bonus": "Gain 2 Appeal each time you play a Water icon",
+    "end_game_bonus": "6 Water icons : 1 CP"
+  },
+  {
+    "card_id": 246,
+    "name": "Aerial Cableway",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "2 Rocks"
+    ],
+    "instant_bonus": "Place the Aerial Cableway special tile next to at least 2 Rocks",
+    "continuing_bonus": "Gain 2 Appeal each time you play a Rock icon",
+    "end_game_bonus": "6 Rock icons : 1 CP"
+  },
+  {
+    "card_id": 247,
+    "name": "Baboon Rock",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Primate + 1 Rock"
+    ],
+    "instant_bonus": "Place the Baboon Rock special tile next to at least 1 Rock",
+    "continuing_bonus": "Gain 2 Appeal each time you play a Primate icon",
+    "end_game_bonus": "6 Primate icons : 1 CP"
+  },
+  {
+    "card_id": 248,
+    "name": "Rhesus Monkey Park",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Primate"
+    ],
+    "instant_bonus": "Place the Rhesus Monkey Park special tile",
+    "continuing_bonus": "Gain 1 X-token each time you play a Primate icon",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 249,
+    "name": "Barred Owl Hut",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Bird"
+    ],
+    "instant_bonus": "Place the Barred Owl Hut special tile",
+    "continuing_bonus": "Draw 2 cards and keep 1 each time you play a Bird icon (Perception 2)",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 250,
+    "name": "Sea Turtle Tank*",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Reptile + 1 Water                                (1 Reptile + 1 Sea Animal + 2 Water*)"
+    ],
+    "instant_bonus": "Place the Sea Turtle Tank special tile next to at least 1 Water",
+    "continuing_bonus": "Sell up to 2 cards for $4 each when you play a Reptile icon (Sunbathing 2)",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 251,
+    "name": "Polar Bear Exhibit",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Bear + 1 Predator + 1 Water"
+    ],
+    "instant_bonus": "Place the Polar Bear Exhibit special tile next to at least 1 Water",
+    "continuing_bonus": "Each time a Bear icon is played in ANY zoo, gain 2 Appeal",
+    "end_game_bonus": "for 3/6 Bear icons : 1/2 CP"
+  },
+  {
+    "card_id": 252,
+    "name": "Spotted Hyena Compound",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Predator + 1 Rock"
+    ],
+    "instant_bonus": "Place the Spotted Hyena Compound special tile next to at least 1 Rock",
+    "continuing_bonus": "Play a Predator icon, reveal X # of cards & add 1 Animal to your hand with X=# of your Predator icons (Hunter X)",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 253,
+    "name": "Okapi Stable",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Herbivore"
+    ],
+    "instant_bonus": "Place the Okapi Stable special tile",
+    "continuing_bonus": "Up to 3 times, when you play a Herbivore icon, play a Sponsor for $X where X=the card strength",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 254,
+    "name": "Zoo School",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Place the Zoo School special tile on at least 2 border spaces; take 1 card deck/reputation; gain 1 Reputation + 1 CP",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 255,
+    "name": "Adventure Playground",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Rock"
+    ],
+    "instant_bonus": "Place the Adventure Playground special tile next to at least 1 Rock; gain 4 Appeal",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 256,
+    "name": "Water Playground",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Water"
+    ],
+    "instant_bonus": "Place the Water Playground special tile next to at least 1 Water; gain 4 Appeal",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 257,
+    "name": "Side Entrance",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Place the Side Entrance special tile on 2 border spaces (need not be adjacent to other buildings)",
+    "continuing_bonus": "Income: Gain $2 per Building(except empty standard enclosures) next to this tile",
+    "end_game_bonus": "Zoo map completely covered : 5 Appeal"
+  },
+  {
+    "card_id": 258,
+    "name": "Native Seabirds",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Bird"
+    ],
+    "instant_bonus": "Gain 1 Appeal for each connected Water space",
+    "continuing_bonus": "Each isolated Water space : 1 CP",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 259,
+    "name": "Native Lizards",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Reptile"
+    ],
+    "instant_bonus": "Gain 1 Appeal for each connected Rock space",
+    "continuing_bonus": "Each isolated Rock space : 1 CP",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 260,
+    "name": "Native Farm Animals",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Herbivore"
+    ],
+    "instant_bonus": "Gain 1 Appeal for each connected Border space without Buildings",
+    "continuing_bonus": "Each group of 6 spaces without Buildings : 1 CP",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 261,
+    "name": "Guided School Toours*",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "1 Appeal + 1 CP",
+    "continuing_bonus": null,
+    "end_game_bonus": "5 different Animal icons : 1 CP"
+  },
+  {
+    "card_id": 262,
+    "name": "Explorer",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Gain $2 for each different Continent and Animal icon in your zoo",
+    "continuing_bonus": "Each time you gain a Continent or Animal icon not in your zoo, gain 1 Appeal + $2",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 263,
+    "name": "Waza Large Animal Program",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Place a 5-space enclosure for free",
+    "continuing_bonus": "If you play a Large Animal, you may ignore 1 condition of your choice.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 264,
+    "name": "Free-Range New World Monkeys",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Primate"
+    ],
+    "instant_bonus": "Gain 1 Appeal for each connected space with a placement Bonus",
+    "continuing_bonus": null,
+    "end_game_bonus": "every 2 isolated spaces with a placement Bonus : 1 CP"
+  },
+  {
+    "card_id": 265,
+    "name": "Franchise Business",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "1 Kiosk",
+    "continuing_bonus": "Income: $1 per Kiosk all other players have in their zoos",
+    "end_game_bonus": "5 Kiosks: 1 CP"
+  },
+  {
+    "card_id": 266,
+    "name": "Marine Biologist",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Sea Animal"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time a Sea Animal icon is playes into ANY zoo, gain$3",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 267,
+    "name": "Farm Cat",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Predator"
+    ],
+    "instant_bonus": "1/3/5 Appeal for 1/4/7 Kiosks and/or Pavillions",
+    "continuing_bonus": null,
+    "end_game_bonus": "1 CP per Kiosk with 3 empty spaces adjacent; Max 3 CP"
+  },
+  {
+    "card_id": 268,
+    "name": "Conference on Europe",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Europe"
+    ],
+    "instant_bonus": "$2/$5/$10 per 1/3/5 Europe icons",
+    "continuing_bonus": "Each time you play a Europe icon into YOUR zoo, you may mark 1 Animal card",
+    "end_game_bonus": "3 Donations : 1 CP"
+  },
+  {
+    "card_id": 269,
+    "name": "Conference on Australia",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Australia"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time you play an Australia icon into YOUR zoo, you may increase the size of a standard enclosure by 1 for free. If the enclosure is occupied, gain 2 Appeal.",
+    "end_game_bonus": "Gain 1 Appeal for each Pouched card in your zoo."
+  },
+  {
+    "card_id": 270,
+    "name": "Marine Research Expedition",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Sea Animal + 1 Science"
+    ],
+    "instant_bonus": null,
+    "continuing_bonus": "Each time you play a Sea Animal icon into YOUR zoo, choose 1: Expedition OR Scuba Dive 1",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 271,
+    "name": "Excavation Site",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Sceince"
+    ],
+    "instant_bonus": "Place Excavation Site tile; gain placement bonuses twice for this building",
+    "continuing_bonus": null,
+    "end_game_bonus": "All placement bonuses on zoo are covered: 1 CP"
+  },
+  {
+    "card_id": 272,
+    "name": "Expansion Area",
+    "sponsor_strength": 5.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Gain 1 3-space standard enclosure ",
+    "continuing_bonus": "Treat all 3-space enclosures on a border space as 5-space enclosures",
+    "end_game_bonus": "All border spaces are covered: 1 CP"
+  },
+  {
+    "card_id": 273,
+    "name": "Publications",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Sceince"
+    ],
+    "instant_bonus": "Make 1 Donation (you do not need to have your Association Action card upgraded)",
+    "continuing_bonus": "When making a Donation, pay $1 less for each Science icon in your zoo.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 274,
+    "name": "Mascot Statue",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Place Mascot Statue tile; Gain 1 Appeal",
+    "continuing_bonus": "Income: 1 Appeal",
+    "end_game_bonus": "Gain 2 Appeal for each zoo with higher Appeal (score last)"
+  },
+  {
+    "card_id": 275,
+    "name": "Horse Whisperer",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Petting Zoo Animal"
+    ],
+    "instant_bonus": "Search the Discard pile for and 1 Petting Zoo Animal.",
+    "continuing_bonus": "Each time a Petting Zoo Animal is playes into ANY zoo, gain $2.",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 276,
+    "name": "Landscape Gardener",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Gain 1 Pavillion; Gain 1 Appeal for every Pavillion in your zoo.",
+    "continuing_bonus": "Each time you build a Pavillion in your zoo, gain 1 X-marker (max. 1 per action)",
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 277,
+    "name": "Field Research Type D Orcas",
+    "sponsor_strength": 3.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Science"
+    ],
+    "instant_bonus": "Gain 3 Reputation",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 278,
+    "name": "Amazon House",
+    "sponsor_strength": 6.0,
+    "requirements": null,
+    "icons_gained": [
+      "1 Sea Animal + 1 Herbivore + 1Primate"
+    ],
+    "instant_bonus": "Place Amazon House tile next to at least 1 Rock + 1 Water space; gain 1 Reputation + 2 CP + 4 Appeal",
+    "continuing_bonus": null,
+    "end_game_bonus": null
+  },
+  {
+    "card_id": 279,
+    "name": "Underwater Tunnel",
+    "sponsor_strength": 4.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "Place Underwater Tunnel tile on 2 Water spaces; Gain 2 Appeal",
+    "continuing_bonus": "This tile can accommodate Sea Animals (max. 2 markers)",
+    "end_game_bonus": "Gain 3/5 Appeal for 1/2 Aquariua adjacent to Underwater Tunnel"
+  },
+  {
+    "card_id": 280,
+    "name": "Reconstruction",
+    "sponsor_strength": 0.0,
+    "requirements": null,
+    "icons_gained": [],
+    "instant_bonus": "You may reposition up to 3 buildings and place 1 free Kiosk + 1 free Pavillion",
+    "continuing_bonus": "Do not gain placement bonuses anymore",
+    "end_game_bonus": "Zoo map completely covered : 5 Appeal"
+  }
+]

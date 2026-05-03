@@ -1,0 +1,84 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "Carte Azione",
+      "community": 3,
+      "norm_label": ""
+    },
+    {
+      "id": "Pausa Caff\u00e8",
+      "community": 5,
+      "norm_label": ""
+    },
+    {
+      "id": "Tracciato della Conservazione",
+      "community": 12,
+      "norm_label": ""
+    },
+    {
+      "id": "Recinti",
+      "community": 8,
+      "norm_label": ""
+    },
+    {
+      "id": "Associazione",
+      "community": 0,
+      "norm_label": ""
+    },
+    {
+      "id": "Zoo",
+      "community": 14,
+      "norm_label": ""
+    },
+    {
+      "id": "Mappa",
+      "community": 4,
+      "norm_label": ""
+    },
+    {
+      "id": "Punteggio",
+      "community": 7,
+      "norm_label": ""
+    },
+    {
+      "id": "Carte Animale",
+      "community": 2,
+      "norm_label": ""
+    },
+    {
+      "id": "Progetti di Conservazione",
+      "community": 6,
+      "norm_label": ""
+    },
+    {
+      "id": "Sponsor",
+      "community": 10,
+      "norm_label": ""
+    },
+    {
+      "id": "Volontari",
+      "community": 13,
+      "norm_label": ""
+    },
+    {
+      "id": "Token X",
+      "community": 11,
+      "norm_label": ""
+    },
+    {
+      "id": "Attrattiva",
+      "community": 1,
+      "norm_label": ""
+    },
+    {
+      "id": "Reputazione",
+      "community": 9,
+      "norm_label": ""
+    }
+  ],
+  "links": [],
+  "hyperedges": []
+}
