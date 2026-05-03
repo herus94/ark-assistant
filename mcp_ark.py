@@ -13,6 +13,17 @@ mcp = FastMCP("ARK NOVA MCP")
 
 DEFAULT_DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
 DB_URI = (os.getenv("DB_URI") or "").strip() or DEFAULT_DB_URI
+
+# Railway e molti servizi cloud richiedono 'postgresql+psycopg2://' e spesso SSL
+if DB_URI.startswith("postgresql://"):
+    DB_URI = DB_URI.replace("postgresql://", "postgresql+psycopg2://", 1)
+
+# Se siamo su Railway (o in generale in produzione), aggiungiamo i parametri SSL se non presenti
+if "localhost" not in DB_URI and "127.0.0.1" not in DB_URI:
+    if "sslmode" not in DB_URI:
+        separator = "&" if "?" in DB_URI else "?"
+        DB_URI += f"{separator}sslmode=require"
+
 engine = create_engine(DB_URI)
 
 import httpx
