@@ -30,7 +30,7 @@ if not DB_URI:
 #     )
 
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model=os.getenv("LLM_MODEL"),
     temperature=0,
     streaming=True,
     api_key=os.getenv("GROQ_KEY")
