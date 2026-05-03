@@ -11,22 +11,24 @@ import json
 load_dotenv()
 mcp = FastMCP("ARK NOVA MCP")
 
-# Recuperiamo la URI dall'ambiente. Se NON esiste, usiamo il default locale.
-# Se siamo su Railway, os.getenv("DB_URI") DEVE restituire la stringa di Railway.
-DB_URI = os.getenv("DB_URI")
+# Recuperiamo la URI dall'ambiente
+DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
 
-if not DB_URI:
-    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
+print(f"DEBUG: Using DB_URI starting with: {DB_URI.split('@')[-1] if '@' in DB_URI else DB_URI}", file=sys.stderr)
 
-# Railway e molti servizi cloud richiedono 'postgresql+psycopg2://' e spesso SSL
+# Railway e molti servizi cloud richiedono 'postgresql+psycopg2://'
 if DB_URI.startswith("postgresql://"):
     DB_URI = DB_URI.replace("postgresql://", "postgresql+psycopg2://", 1)
 
-# Se non siamo in locale, forziamo SSL
-if "localhost" not in DB_URI and "127.0.0.1" not in DB_URI:
+# Se non siamo in locale (non contiene localhost o 127.0.0.1), forziamo SSL
+is_local = "localhost" in DB_URI or "127.0.0.1" in DB_URI
+if not is_local:
     if "sslmode" not in DB_URI:
         separator = "&" if "?" in DB_URI else "?"
         DB_URI += f"{separator}sslmode=require"
+    print("DEBUG: SSL mode enabled for remote connection", file=sys.stderr)
+else:
+    print("DEBUG: Local connection detected, skipping SSL force", file=sys.stderr)
 
 engine = create_engine(DB_URI)
 

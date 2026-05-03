@@ -15,20 +15,8 @@ from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 
 load_dotenv()
-DB_URI = os.getenv("DB_URI")
-
-if not DB_URI:
-    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
-
-# Railway e molti servizi cloud richiedono 'postgresql+psycopg2://' e spesso SSL
-if DB_URI.startswith("postgresql://"):
-    DB_URI = DB_URI.replace("postgresql://", "postgresql+psycopg2://", 1)
-
-# Se siamo su Railway (o in produzione), aggiungiamo i parametri SSL se non presenti
-if "localhost" not in DB_URI and "127.0.0.1" not in DB_URI:
-    if "sslmode" not in DB_URI:
-        separator = "&" if "?" in DB_URI else "?"
-        DB_URI += f"{separator}sslmode=require"
+# Passiamo la URI così com'è dall'ambiente, lasciamo che sia il server MCP a gestirla
+DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
 
 # llm_gemini = ChatGoogleGenerativeAI(
 #     model="gemini-2.5-flash", # o "gemini-1.5-pro" per analisi ancora più profonde
