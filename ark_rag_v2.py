@@ -15,7 +15,10 @@ from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 
 load_dotenv()
-DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
+DB_URI = os.getenv("DB_URI")
+
+if not DB_URI:
+    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
 
 # Railway e molti servizi cloud richiedono 'postgresql+psycopg2://' e spesso SSL
 if DB_URI.startswith("postgresql://"):

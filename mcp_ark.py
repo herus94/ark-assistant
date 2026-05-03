@@ -11,14 +11,18 @@ import json
 load_dotenv()
 mcp = FastMCP("ARK NOVA MCP")
 
-DEFAULT_DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
-DB_URI = (os.getenv("DB_URI") or "").strip() or DEFAULT_DB_URI
+# Recuperiamo la URI dall'ambiente. Se NON esiste, usiamo il default locale.
+# Se siamo su Railway, os.getenv("DB_URI") DEVE restituire la stringa di Railway.
+DB_URI = os.getenv("DB_URI")
+
+if not DB_URI:
+    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
 
 # Railway e molti servizi cloud richiedono 'postgresql+psycopg2://' e spesso SSL
 if DB_URI.startswith("postgresql://"):
     DB_URI = DB_URI.replace("postgresql://", "postgresql+psycopg2://", 1)
 
-# Se siamo su Railway (o in generale in produzione), aggiungiamo i parametri SSL se non presenti
+# Se non siamo in locale, forziamo SSL
 if "localhost" not in DB_URI and "127.0.0.1" not in DB_URI:
     if "sslmode" not in DB_URI:
         separator = "&" if "?" in DB_URI else "?"
