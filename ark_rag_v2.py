@@ -15,8 +15,11 @@ from langchain.agents import create_agent
 from langchain_groq import ChatGroq
 
 load_dotenv()
-# Passiamo la URI così com'è dall'ambiente, lasciamo che sia il server MCP a gestirla
-DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
+# Recuperiamo la URI dall'ambiente e puliamo
+DB_URI = (os.getenv("DB_URI") or "").strip()
+
+if not DB_URI:
+    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
 
 # llm_gemini = ChatGoogleGenerativeAI(
 #     model="gemini-2.5-flash", # o "gemini-1.5-pro" per analisi ancora più profonde

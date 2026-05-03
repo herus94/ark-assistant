@@ -11,8 +11,12 @@ import json
 load_dotenv()
 mcp = FastMCP("ARK NOVA MCP")
 
-# Recuperiamo la URI dall'ambiente
-DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
+# Recuperiamo la URI dall'ambiente e puliamo da eventuali spazi/newline
+DB_URI = (os.getenv("DB_URI") or "").strip()
+
+if not DB_URI:
+    # Se None o vuota, allora e SOLO ALLORA usiamo il default locale
+    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
 
 print(f"DEBUG: Using DB_URI starting with: {DB_URI.split('@')[-1] if '@' in DB_URI else DB_URI}", file=sys.stderr)
 
