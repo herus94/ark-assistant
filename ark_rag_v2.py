@@ -49,14 +49,14 @@ async def agente_unico(domanda: str, db_map) -> str:
         {
             "cards": {
                 "transport": "stdio",
-                "command": sys.executable,
+                "command": "python3",
                 "args": ["mcp_ark.py"],
                 "env": {**os.environ, "DB_URI": DB_URI}
                 
             },
             "rules": {
                 "transport": "stdio",
-                "command": sys.executable,
+                "command": "python3",
                 "args": ["-m", "graphify.serve", "graphify-out/graph.json"],
                 "env": os.environ
             }
