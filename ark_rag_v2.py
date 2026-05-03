@@ -16,10 +16,12 @@ from langchain_groq import ChatGroq
 
 load_dotenv()
 # Recuperiamo la URI dall'ambiente e puliamo
-DB_URI = (os.getenv("DB_URI") or "").strip()
+DB_URI = os.getenv("DB_URI") 
 
 if not DB_URI:
-    DB_URI = "postgresql://user:password@localhost:5433/db_destinazione"
+    # Questo log apparirà nei log di Railway se la variabile è vuota
+    print("ERRORE: Variabile DB_URI non trovata!", file=sys.stderr)
+
 
 # llm_gemini = ChatGoogleGenerativeAI(
 #     model="gemini-2.5-flash", # o "gemini-1.5-pro" per analisi ancora più profonde
