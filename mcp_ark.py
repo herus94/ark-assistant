@@ -313,17 +313,24 @@ def search_rules(query: str, n_results: int = 10):
 
     n_results = max(1, min(int(n_results), 10))
 
-    embeddings = OllamaEmbeddings(model="nomic-embed-text")
-    
-    vector_store = PGVector(
-        collection_name="manuale_regole",
-        connection=DB_URI,
-        embeddings=embeddings,
-        use_jsonb=True
-    )
+    # 1. Ricerca vettoriale. Se Ollama non e' disponibile, non deve fallire
+    # tutto il tool: passiamo al fallback keyword sotto.
+    vector_results = []
+    vector_error = None
+    try:
+        embeddings = OllamaEmbeddings(model="nomic-embed-text")
+        
+        vector_store = PGVector(
+            collection_name="manuale_regole",
+            connection=DB_URI,
+            embeddings=embeddings,
+            use_jsonb=True
+        )
 
-    # 1. Ricerca vettoriale
-    vector_results = vector_store.similarity_search(query, k=n_results)
+        vector_results = vector_store.similarity_search(query, k=n_results)
+    except Exception as e:
+        vector_error = str(e)
+
     vector_texts = {doc.page_content for doc in vector_results}
 
     # 2. Ricerca keyword come fallback (cerca le parole chiave direttamente nel testo)
@@ -373,8 +380,19 @@ def search_rules(query: str, n_results: int = 10):
         })
     output.extend(keyword_results)
 
+    if vector_error:
+        output.append({
+            "sezione": "Nota tecnica",
+            "sotto_sezione": "",
+            "contenuto": (
+                "La ricerca vettoriale non e' disponibile perche' Ollama non e' raggiungibile; "
+                "sono stati usati solo eventuali risultati keyword."
+            ),
+            "fonte": "sistema"
+        })
+
     if not output:
-        return json.dumps({"nota": "Nessun frammento trovato."})
+        return json.dumps({"nota": "Nessun frammento trovato.", "errore_vettoriale": vector_error}, ensure_ascii=False)
 
     return json.dumps(output, ensure_ascii=False)
 
