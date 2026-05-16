@@ -7,6 +7,7 @@ import os
 from dotenv import load_dotenv
 import sys
 import json
+from embeddings import get_embeddings
 
 load_dotenv()
 mcp = FastMCP("ARK NOVA MCP")
@@ -308,7 +309,6 @@ def search_rules(query: str, n_results: int = 10):
     Cerca nel regolamento di Ark Nova per domande su meccaniche, fasi (Pausa Caffè) e icone.
     """
     import psycopg2
-    from langchain_ollama import OllamaEmbeddings
     from langchain_postgres.vectorstores import PGVector
 
     n_results = max(1, min(int(n_results), 10))
@@ -318,7 +318,7 @@ def search_rules(query: str, n_results: int = 10):
     vector_results = []
     vector_error = None
     try:
-        embeddings = OllamaEmbeddings(model="nomic-embed-text")
+        embeddings = get_embeddings()
         
         vector_store = PGVector(
             collection_name="manuale_regole",

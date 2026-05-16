@@ -38,6 +38,10 @@ services:
     environment:
       - GROQ_API_KEY=${GROQ_KEY}
       - DB_URI=postgresql://user:password@db_destinazione:5432/db_destinazione
+      - EMBEDDINGS_PROVIDER=${EMBEDDINGS_PROVIDER:-local}
+      - LOCAL_EMBEDDING_MODEL=${LOCAL_EMBEDDING_MODEL:-sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
     depends_on:
       - db_destinazione
     networks:

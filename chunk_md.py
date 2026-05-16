@@ -1,10 +1,11 @@
 import os
 
 from dotenv import load_dotenv
-from langchain_ollama import OllamaEmbeddings
 from langchain_postgres.vectorstores import PGVector
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 from sqlalchemy import create_engine, text
+
+from embeddings import get_embeddings
 
 
 load_dotenv()
@@ -67,8 +68,8 @@ for file_path, source in markdown_files:
 print(f"Chunk totali: {len(final_splits)}")
 
 
-# 1. Inizializzazione del modello locale (768 dimensioni)
-embeddings = OllamaEmbeddings(model="nomic-embed-text")
+# 1. Inizializzazione embeddings configurabile
+embeddings = get_embeddings()
 
 # 2. Caricamento su Postgres
 # LangChain gestisce automaticamente l'estrazione del testo e l'invio dei vettori
