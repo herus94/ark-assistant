@@ -6,6 +6,8 @@ langchain-core
 langchain-google-genai
 langchain-groq
 langchain-mcp-adapters
+langchain-ollama
+langchain-postgres
 langchain-protocol
 langgraph
 mcp

@@ -1,4 +1,22 @@
+import os
+
+from dotenv import load_dotenv
+from langchain_ollama import OllamaEmbeddings
+from langchain_postgres.vectorstores import PGVector
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
+from sqlalchemy import create_engine, text
+
+
+load_dotenv()
+
+connection_string = os.getenv("DB_URI") or os.getenv("DB_URL") or os.getenv("DATABASE_URL")
+if not connection_string:
+    raise RuntimeError(
+        "Connessione DB non trovata. Imposta DB_URI, DB_URL o DATABASE_URL nel file .env."
+    )
+
+with create_engine(connection_string).begin() as conn:
+    conn.execute(text("CREATE EXTENSION IF NOT EXISTS vector"))
 
 with open("regolamento/Ark_Nova.md", "r") as f:
     markdown_document = f.read()
@@ -32,19 +50,13 @@ final_splits = [
 print(f"Chunk totali: {len(final_splits)}")
 
 
-from langchain_ollama import OllamaEmbeddings
-from langchain_postgres.vectorstores import PGVector
-
 # 1. Inizializzazione del modello locale (768 dimensioni)
 embeddings = OllamaEmbeddings(model="nomic-embed-text")
 
-# 2. Stringa di connessione (modifica con i tuoi parametri)
-connection_string = "postgresql://user:password@localhost:5433/db_destinazione"
-
-# 3. Caricamento su Postgres
+# 2. Caricamento su Postgres
 # LangChain gestisce automaticamente l'estrazione del testo e l'invio dei vettori
 vector_store = PGVector.from_documents(
-    documents=md_header_splits,
+    documents=final_splits,
     embedding=embeddings,
     collection_name="manuale_regole",
     connection=connection_string,

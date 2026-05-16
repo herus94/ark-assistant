@@ -2,10 +2,13 @@ import json
 import pandas as pd
 from sqlalchemy import create_engine, Column, Integer, String, Float, JSON, ARRAY
 from sqlalchemy.orm import declarative_base, sessionmaker
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
 # Connessione al tuo container Postgres
 #DB_URL = "postgresql://user:password@localhost:5433/db_destinazione"
-DB_URL = "postgresql://postgres:LQNmOPUkbmskKHqZhiqCUvqINZAIwLSZ@interchange.proxy.rlwy.net:15565/railway"
+DB_URL = os.getenv("DB_URI")
 engine = create_engine(DB_URL)
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
