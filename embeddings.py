@@ -3,6 +3,26 @@ import os
 from langchain_core.embeddings import Embeddings
 
 
+class FastEmbedEmbeddings(Embeddings):
+    def __init__(self, model_name: str):
+        self.model_name = model_name
+        self._model = None
+
+    @property
+    def model(self):
+        if self._model is None:
+            from fastembed import TextEmbedding
+
+            self._model = TextEmbedding(model_name=self.model_name)
+        return self._model
+
+    def embed_documents(self, texts: list[str]) -> list[list[float]]:
+        return [embedding.tolist() for embedding in self.model.embed(texts)]
+
+    def embed_query(self, text: str) -> list[float]:
+        return self.embed_documents([text])[0]
+
+
 class LocalSentenceTransformerEmbeddings(Embeddings):
     def __init__(self, model_name: str):
         self.model_name = model_name
@@ -48,9 +68,14 @@ def get_embeddings():
         return OllamaEmbeddings(model=os.getenv("OLLAMA_EMBED_MODEL", "nomic-embed-text"))
 
     if provider == "local":
+        return FastEmbedEmbeddings(
+            os.getenv("FASTEMBED_MODEL", "BAAI/bge-small-en-v1.5")
+        )
+
+    if provider == "sentence-transformers":
         return LocalSentenceTransformerEmbeddings(
             os.getenv(
-                "LOCAL_EMBEDDING_MODEL",
+                "SENTENCE_TRANSFORMERS_MODEL",
                 "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
             )
         )

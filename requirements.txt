@@ -17,7 +17,7 @@ pydantic
 pydantic_core
 pydantic-settings
 python-dotenv
-sentence-transformers
+fastembed
 uvicorn
 pandas
 sqlalchemy
