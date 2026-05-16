@@ -68,6 +68,8 @@ async def agente_unico(domanda: str, db_map) -> str:
         Sii efficiente. Se i tool ti danno informazioni sufficienti, smetti di chiamarli e rispondi.
 
         Quando filtri per nomi, regioni o categorie: usa confronti case-insensitive (ILIKE) e, se l'utente scrive in italiano, traduci in inglese o usa una condizione OR con entrambe le varianti (es. 'Europa' OR 'Europe').
+        Per gli animali filtrati per continente, preferisci il tool get_animals_by_continent. Se devi scrivere SQL, ricorda che continents è un array JSON: usa jsonb_array_elements_text(continents::jsonb) con ILIKE 'Africa%' per includere anche valori come 'Africa x2'; non usare l'operatore jsonb ? per questi filtri perché richiede match esatto.
+        Per gli animali filtrati per tipo, preferisci get_animals_by_type: types può contenere valori come 'Sea Animal 2'. Per sponsor filtrati per icona ottenuta, preferisci get_sponsors_by_icon: icons_gained può contenere valori combinati come '1 Herbivore + 1 Rock'.
         
         """),
         ("human", domanda)]
