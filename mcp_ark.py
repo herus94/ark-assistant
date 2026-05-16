@@ -299,7 +299,84 @@ def get_sponsors_by_icon(icon: str, limit: int = 20):
         return json.dumps(df.to_dict(orient="records"), default=str)
     except Exception as e:
         return json.dumps({"errore": str(e)})
+    
+# ─── TOOL DI RICERCA NEL REGOLAMENTO ─────────────────────────────────────────
 
+@mcp.tool()
+def search_rules(query: str, n_results: int = 10):
+    """
+    Cerca nel regolamento di Ark Nova per domande su meccaniche, fasi (Pausa Caffè) e icone.
+    """
+    import psycopg2
+    from langchain_ollama import OllamaEmbeddings
+    from langchain_postgres.vectorstores import PGVector
+
+    n_results = max(1, min(int(n_results), 10))
+
+    embeddings = OllamaEmbeddings(model="nomic-embed-text")
+    
+    vector_store = PGVector(
+        collection_name="manuale_regole",
+        connection=DB_URI,
+        embeddings=embeddings,
+        use_jsonb=True
+    )
+
+    # 1. Ricerca vettoriale
+    vector_results = vector_store.similarity_search(query, k=n_results)
+    vector_texts = {doc.page_content for doc in vector_results}
+
+    # 2. Ricerca keyword come fallback (cerca le parole chiave direttamente nel testo)
+    keyword_results = []
+    try:
+        conn = psycopg2.connect(DB_URI)
+        cur = conn.cursor()
+        
+        # Prendi le parole significative dalla query (>3 caratteri)
+        keywords = [w for w in query.split() if len(w) > 3]
+        if not keywords:
+            raise ValueError("Nessuna keyword significativa per la ricerca testuale.")
+
+        like_clauses = " OR ".join([f"e.document ILIKE %s" for _ in keywords])
+        params = [f"%{kw}%" for kw in keywords]
+        
+        cur.execute(f"""
+            SELECT e.document, e.cmetadata
+            FROM langchain_pg_embedding e
+            JOIN langchain_pg_collection c ON e.collection_id = c.uuid
+            WHERE c.name = 'manuale_regole'
+            AND ({like_clauses})
+            LIMIT %s
+        """, params + [n_results])
+        
+        for doc_text, metadata in cur.fetchall():
+            if doc_text not in vector_texts:  # evita duplicati
+                keyword_results.append({
+                    "sezione": metadata.get("Header 2", "Generale") if metadata else "Generale",
+                    "sotto_sezione": metadata.get("Header 3", "") if metadata else "",
+                    "contenuto": doc_text,
+                    "fonte": "keyword"
+                })
+        cur.close()
+        conn.close()
+    except Exception as e:
+        pass  # fallback silenzioso se la keyword search fallisce
+
+    # 3. Unisci i risultati (vector first, poi keyword)
+    output = []
+    for doc in vector_results:
+        output.append({
+            "sezione": doc.metadata.get("Header 2", "Generale"),
+            "sotto_sezione": doc.metadata.get("Header 3", ""),
+            "contenuto": doc.page_content,
+            "fonte": "vettoriale"
+        })
+    output.extend(keyword_results)
+
+    if not output:
+        return json.dumps({"nota": "Nessun frammento trovato."})
+
+    return json.dumps(output, ensure_ascii=False)
 
 # ─── EXECUTE SQL ─────────────────────────────────────────────────────────────
 
