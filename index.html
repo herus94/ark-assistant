@@ -240,6 +240,45 @@
             padding: 0.08rem 0.32rem;
         }
 
+        .markdown-body .table-wrap {
+            margin: 1rem 0;
+            overflow-x: auto;
+            border: 1px solid rgba(0, 139, 154, 0.18);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.72);
+        }
+
+        .markdown-body table {
+            width: 100%;
+            min-width: 620px;
+            border-collapse: collapse;
+            font-size: 0.94rem;
+            line-height: 1.45;
+        }
+
+        .markdown-body th,
+        .markdown-body td {
+            padding: 0.7rem 0.8rem;
+            border-bottom: 1px solid rgba(0, 139, 154, 0.14);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .markdown-body th {
+            background: rgba(0, 168, 181, 0.1);
+            color: #075b64;
+            font-weight: 800;
+            white-space: nowrap;
+        }
+
+        .markdown-body tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .markdown-body tbody tr:nth-child(even) {
+            background: rgba(201, 242, 223, 0.18);
+        }
+
         .loading-animation {
             display: inline-flex;
             gap: 4px;
@@ -366,6 +405,63 @@
                 .replace(/\*([^*]+)\*/g, '<em>$1</em>');
         }
 
+        function splitTableRow(line) {
+            const trimmed = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+            const cells = [];
+            let current = '';
+            let escaped = false;
+
+            for (const char of trimmed) {
+                if (escaped) {
+                    current += char;
+                    escaped = false;
+                } else if (char === '\\') {
+                    escaped = true;
+                } else if (char === '|') {
+                    cells.push(current.trim());
+                    current = '';
+                } else {
+                    current += char;
+                }
+            }
+
+            cells.push(current.trim());
+            return cells;
+        }
+
+        function isTableRow(line) {
+            const cells = splitTableRow(line);
+            return line.includes('|') && cells.length > 1;
+        }
+
+        function isTableDivider(line) {
+            if (!isTableRow(line)) return false;
+            return splitTableRow(line).every((cell) => /^:?-{3,}:?$/.test(cell.trim()));
+        }
+
+        function renderTable(tableLines) {
+            const header = splitTableRow(tableLines[0]);
+            const alignments = splitTableRow(tableLines[1]).map((cell) => {
+                const value = cell.trim();
+                if (/^:-+:$/.test(value)) return 'center';
+                if (/^-+:$/.test(value)) return 'right';
+                return 'left';
+            });
+            const rows = tableLines.slice(2).map(splitTableRow);
+
+            const renderCell = (tag, cell, index) => {
+                const align = alignments[index] || 'left';
+                return `<${tag} style="text-align:${align}">${inlineMarkdown(cell)}</${tag}>`;
+            };
+
+            const thead = `<thead><tr>${header.map((cell, index) => renderCell('th', cell, index)).join('')}</tr></thead>`;
+            const tbody = rows.length
+                ? `<tbody>${rows.map((row) => `<tr>${header.map((_, index) => renderCell('td', row[index] || '', index)).join('')}</tr>`).join('')}</tbody>`
+                : '';
+
+            return `<div class="table-wrap"><table>${thead}${tbody}</table></div>`;
+        }
+
         function renderMarkdown(text) {
             const safe = escapeHtml(text || '').replace(/\r\n/g, '\n').trim();
             if (!safe) return '';
@@ -389,20 +485,35 @@
                 }
             };
 
-            lines.forEach((rawLine) => {
+            for (let index = 0; index < lines.length; index += 1) {
+                const rawLine = lines[index];
                 const line = rawLine.trim();
 
                 if (!line) {
                     closeParagraph();
                     closeList();
-                    return;
+                    continue;
                 }
 
                 if (/^---+$/.test(line)) {
                     closeParagraph();
                     closeList();
                     html.push('<hr>');
-                    return;
+                    continue;
+                }
+
+                if (isTableRow(line) && index + 1 < lines.length && isTableDivider(lines[index + 1].trim())) {
+                    const tableLines = [line, lines[index + 1].trim()];
+                    index += 2;
+                    while (index < lines.length && isTableRow(lines[index].trim()) && lines[index].trim()) {
+                        tableLines.push(lines[index].trim());
+                        index += 1;
+                    }
+                    index -= 1;
+                    closeParagraph();
+                    closeList();
+                    html.push(renderTable(tableLines));
+                    continue;
                 }
 
                 const heading = line.match(/^(#{1,3})\s+(.+)$/);
@@ -411,7 +522,7 @@
                     closeList();
                     const level = heading[1].length;
                     html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
-                    return;
+                    continue;
                 }
 
                 const bullet = line.match(/^[-*]\s+(.+)$/);
@@ -423,7 +534,7 @@
                         listType = 'ul';
                     }
                     html.push(`<li>${inlineMarkdown(bullet[1])}</li>`);
-                    return;
+                    continue;
                 }
 
                 const ordered = line.match(/^\d+\.\s+(.+)$/);
@@ -435,12 +546,12 @@
                         listType = 'ol';
                     }
                     html.push(`<li>${inlineMarkdown(ordered[1])}</li>`);
-                    return;
+                    continue;
                 }
 
                 closeList();
                 paragraph.push(line);
-            });
+            }
 
             closeParagraph();
             closeList();
