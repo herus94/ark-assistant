@@ -5,68 +5,257 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ark Nova Assistant</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --nova-teal: #00a8b5;
+            --nova-cyan: #67d7dc;
+            --nova-mint: #c9f2df;
+            --nova-green: #32b34a;
+            --nova-lime: #9ccb26;
+            --nova-deep: #064f58;
+            --nova-ink: #17313a;
+            --nova-panel: #fbfffb;
+            --nova-line: rgba(0, 139, 154, 0.18);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Lora', serif;
-            background-color: #e0e4d9; /* Grigio-verde natura */
-            background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('https://www.transparenttextures.com/patterns/natural-paper.png');
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--nova-ink);
+            background-color: #d9f6ee;
+            background-image:
+                radial-gradient(circle at 50% 11%, rgba(255, 255, 255, 0.9), transparent 16rem),
+                radial-gradient(circle at 22% 18%, rgba(103, 215, 220, 0.7), transparent 24rem),
+                radial-gradient(circle at 82% 10%, rgba(255, 255, 255, 0.68), transparent 20rem),
+                linear-gradient(180deg, rgba(4, 164, 178, 0.96) 0%, rgba(171, 231, 208, 0.96) 48%, rgba(47, 178, 74, 0.94) 100%),
+                url('https://www.transparenttextures.com/patterns/natural-paper.png');
+            background-attachment: fixed;
         }
+
         .ark-header {
-            background: linear-gradient(135deg, #1a3c15 0%, #2d5a27 100%);
-            font-family: 'Cinzel', serif;
+            background:
+                radial-gradient(circle at 50% -30%, rgba(255, 255, 255, 0.24), transparent 26rem),
+                linear-gradient(90deg, rgba(0, 139, 154, 0.94), rgba(46, 184, 158, 0.9), rgba(82, 183, 75, 0.92));
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 18px 55px rgba(5, 78, 85, 0.24);
         }
+
+        .brand-mark {
+            background: linear-gradient(145deg, #ffffff, #d9fff3);
+            box-shadow: 0 0 0 6px rgba(255,255,255,0.28), 0 18px 42px rgba(2, 90, 98, 0.24);
+        }
+
+        .nova-title {
+            font-family: 'Rajdhani', 'Inter', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.12em;
+            line-height: 0.9;
+            text-shadow: 0 8px 28px rgba(0, 75, 85, 0.22);
+        }
+
         .zoo-card {
-            border: 1px solid #c5ccb7;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid rgba(255, 255, 255, 0.72);
+            box-shadow: 0 34px 90px rgba(4, 76, 82, 0.32);
+            background:
+                linear-gradient(180deg, rgba(255,255,255,0.94), rgba(239, 255, 247, 0.92)),
+                radial-gradient(circle at 50% 0%, rgba(103, 215, 220, 0.18), transparent 22rem);
+            backdrop-filter: blur(14px);
         }
+
         .card-accent {
-            height: 12px;
-            background: linear-gradient(to right, #2d5a27, #8eb34a, #d4af37);
+            height: 10px;
+            background: linear-gradient(90deg, #0094a6, #52d3d6, #c9f2df, #8fc927, #32b34a);
         }
+
+        .chat-bg {
+            background:
+                radial-gradient(circle at 50% 0%, rgba(255,255,255,0.88), transparent 22rem),
+                linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)),
+                linear-gradient(30deg, transparent 24%, var(--nova-line) 25%, var(--nova-line) 26%, transparent 27%, transparent 74%, var(--nova-line) 75%, var(--nova-line) 76%, transparent 77%),
+                linear-gradient(150deg, transparent 24%, var(--nova-line) 25%, var(--nova-line) 26%, transparent 27%, transparent 74%, var(--nova-line) 75%, var(--nova-line) 76%, transparent 77%);
+            background-size: auto, auto, 72px 42px, 72px 42px;
+        }
+
+        .nova-hero {
+            background:
+                radial-gradient(circle at 50% 18%, rgba(255,255,255,0.86), transparent 8rem),
+                linear-gradient(135deg, rgba(0, 168, 181, 0.92), rgba(175, 238, 214, 0.9) 54%, rgba(67, 184, 77, 0.88));
+            border: 1px solid rgba(255,255,255,0.72);
+            box-shadow: 0 18px 50px rgba(0, 106, 116, 0.22);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nova-hero::before {
+            content: "";
+            position: absolute;
+            width: 18rem;
+            height: 18rem;
+            left: 50%;
+            top: -7rem;
+            transform: translateX(-50%);
+            border: 2px solid rgba(255,255,255,0.44);
+            border-radius: 50%;
+            box-shadow: 0 0 0 18px rgba(255,255,255,0.12), inset 0 0 36px rgba(255,255,255,0.35);
+        }
+
+        .leaf-stage {
+            position: relative;
+            z-index: 1;
+            width: min(22rem, 72vw);
+            height: 5.8rem;
+            margin: 0 auto 0.8rem;
+            border-radius: 45% 55% 44% 56% / 58% 58% 42% 42%;
+            background: linear-gradient(135deg, #c3df27, #54bf3c 58%, #25943a);
+            box-shadow: 0 18px 36px rgba(17, 129, 55, 0.28);
+            transform: perspective(500px) rotateX(54deg);
+        }
+
+        .animal-row {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 0.35rem;
+            margin-bottom: -2.1rem;
+            font-size: clamp(2.15rem, 5vw, 3.5rem);
+            filter: drop-shadow(0 14px 12px rgba(13, 92, 82, 0.22));
+        }
+
         .message-ai {
-            background-color: #f0f4eb;
-            border-left: 5px solid #2d5a27;
-            border-bottom: 1px solid #d1dbbd;
+            background: linear-gradient(180deg, #ffffff, #effff8);
+            border-left: 6px solid var(--nova-teal);
+            border-bottom: 1px solid rgba(0, 139, 154, 0.16);
         }
+
         .message-user {
-            background-color: #fdfbf7;
-            border-right: 5px solid #c19a6b;
-            border-bottom: 1px solid #e8dec9;
+            background: linear-gradient(180deg, #ffffff, #f2ffe3);
+            border-right: 6px solid var(--nova-lime);
+            border-bottom: 1px solid rgba(50, 179, 74, 0.18);
         }
+
         .btn-ark {
-            background-color: #2d5a27;
-            font-family: 'Cinzel', serif;
-            letter-spacing: 1px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background: linear-gradient(135deg, #00a8b5, #20c7b3 52%, #7fc82f);
+            font-family: 'Inter', system-ui, sans-serif;
+            letter-spacing: 0.02em;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+            border: 1px solid rgba(255,255,255,0.5);
         }
+
         .btn-ark:hover {
-            background-color: #1b3d17;
-            transform: scale(1.02);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            filter: saturate(1.12) brightness(1.04);
+            transform: translateY(-2px);
+            box-shadow: 0 16px 34px rgba(0, 129, 143, 0.28);
         }
+
         .ark-input {
-            background-color: #fafafa;
-            border: 2px solid #d1dbbd;
+            background-color: #ffffff;
+            border: 2px solid rgba(0, 168, 181, 0.22);
         }
+
         .ark-input:focus {
-            border-color: #2d5a27;
+            border-color: var(--nova-teal);
             background-color: #fff;
         }
+
+        .quick-chip {
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(255, 255, 255, 0.78);
+            color: #075b64;
+            box-shadow: 0 10px 24px rgba(0, 104, 112, 0.16);
+            backdrop-filter: blur(10px);
+        }
+
+        .quick-chip:hover {
+            background: #effff8;
+            border-color: rgba(0, 168, 181, 0.42);
+            transform: translateY(-1px);
+        }
+
+        .markdown-body {
+            color: #23404a;
+            line-height: 1.72;
+        }
+
+        .markdown-body h1,
+        .markdown-body h2,
+        .markdown-body h3 {
+            font-family: 'Rajdhani', 'Inter', sans-serif;
+            color: #075b64;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+            line-height: 1.25;
+            margin: 0.2rem 0 0.75rem;
+        }
+
+        .markdown-body h1 { font-size: 1.35rem; }
+        .markdown-body h2 { font-size: 1.15rem; }
+        .markdown-body h3 { font-size: 1rem; }
+
+        .markdown-body p {
+            margin: 0.7rem 0;
+        }
+
+        .markdown-body ul,
+        .markdown-body ol {
+            margin: 0.75rem 0 0.75rem 1.2rem;
+            padding-left: 1rem;
+        }
+
+        .markdown-body ul { list-style: disc; }
+        .markdown-body ol { list-style: decimal; }
+
+        .markdown-body li {
+            margin: 0.35rem 0;
+            padding-left: 0.15rem;
+        }
+
+        .markdown-body strong {
+            color: #066370;
+            font-weight: 800;
+        }
+
+        .markdown-body em {
+            color: #347a30;
+        }
+
+        .markdown-body hr {
+            border: 0;
+            border-top: 1px solid rgba(0, 139, 154, 0.18);
+            margin: 1rem 0;
+        }
+
+        .markdown-body code {
+            background: rgba(0, 168, 181, 0.1);
+            border: 1px solid rgba(0, 168, 181, 0.2);
+            border-radius: 5px;
+            color: #075b64;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.92em;
+            padding: 0.08rem 0.32rem;
+        }
+
         .loading-animation {
             display: inline-flex;
             gap: 4px;
         }
+
         .dot {
             width: 8px;
             height: 8px;
-            background: #2d5a27;
+            background: var(--nova-teal);
             border-radius: 50%;
             animation: bounce 1.4s infinite ease-in-out both;
         }
+
         .dot:nth-child(1) { animation-delay: -0.32s; }
         .dot:nth-child(2) { animation-delay: -0.16s; }
+
         @keyframes bounce {
             0%, 80%, 100% { transform: scale(0); }
             40% { transform: scale(1); }
@@ -76,44 +265,54 @@
 <body class="min-h-screen flex flex-col">
 
     <!-- Header -->
-    <header class="ark-header text-white p-6 shadow-lg">
+    <header class="ark-header text-white px-5 py-5">
         <div class="container mx-auto flex items-center justify-between">
-            <div class="flex items-center space-gap-4">
-                <div class="bg-white p-2 rounded-full mr-4">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#2d5a27" xmlns="http://www.w3.org/2000/svg">
+            <div class="flex items-center">
+                <div class="brand-mark p-3 rounded-full mr-4">
+                    <svg width="34" height="34" viewBox="0 0 24 24" fill="#008b9a" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M12 2L4.5 20.29L5.21 21L12 18L18.79 21L19.5 20.29L12 2Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h1 class="text-3xl font-bold tracking-tight">ARK NOVA</h1>
-                    <p class="text-sm opacity-80 uppercase tracking-widest text-green-100">AI Expert Assistant</p>
+                    <h1 class="nova-title text-4xl md:text-5xl">ARK NOVA</h1>
+                    <p class="text-xs md:text-sm opacity-95 uppercase tracking-[0.28em] text-white/90">Regolamento & Carte</p>
                 </div>
             </div>
-            <div class="hidden md:block text-right">
-                <span class="text-xs block text-green-200">DATABASE STATUS</span>
-                <span class="inline-block w-2 h-2 bg-green-400 rounded-full mr-1"></span>
-                <span class="font-bold">CONNETTED</span>
+            <div class="hidden md:flex items-center gap-3 rounded-full border border-white/45 bg-white/20 px-4 py-2 text-right backdrop-blur-md">
+                <span class="inline-block w-2.5 h-2.5 bg-lime-300 rounded-full shadow-[0_0_14px_rgba(190,242,100,0.95)]"></span>
             </div>
         </div>
     </header>
 
     <!-- Main Chat Area -->
-    <main class="flex-grow container mx-auto max-w-4xl p-4 md:p-8">
-        <div class="zoo-card rounded-xl min-h-[600px] flex flex-col overflow-hidden">
+    <main class="flex-grow container mx-auto max-w-6xl p-4 md:p-8">
+        <div class="zoo-card rounded-[1.75rem] min-h-[700px] flex flex-col overflow-hidden">
             <div class="card-accent"></div>
             
             <!-- Chat Window -->
-            <div id="chat-window" class="flex-grow p-6 overflow-y-auto space-y-6 bg-white/50">
+            <div id="chat-window" class="chat-bg flex-grow p-4 md:p-7 overflow-y-auto space-y-6">
+                <section class="nova-hero rounded-[1.35rem] px-5 py-7 md:px-8 md:py-8 text-center">
+                    <div class="animal-row" aria-hidden="true">
+                        <span>🦅</span>
+                        <span>🐅</span>
+                        <span class="text-[1.25em]">🐘</span>
+                        <span>🦁</span>
+                        <span>🐻</span>
+                    </div>
+                    <div class="leaf-stage" aria-hidden="true"></div>
+                    <h2 class="nova-title relative z-[2] text-white text-5xl md:text-6xl">ARK NOVA</h2>
+                </section>
+
                 <!-- Welcome Message -->
-                <div class="message-ai p-5 rounded-r-2xl rounded-bl-2xl shadow-sm max-w-[85%]">
-                    <p class="text-green-900 font-bold mb-2 uppercase text-xs tracking-tighter">DIRETTORE SCIENTIFICO</p>
-                    <p class="text-gray-800 leading-relaxed text-lg italic">"Benvenuto allo Zoo! Sono qui per assisterti nel rendere la tua riserva la più rinomata del mondo. Hai domande sulle specie, sulle regole di conservazione o sulle carte sponsor?"</p>
+                <div class="message-ai p-5 md:p-6 rounded-r-2xl rounded-bl-2xl shadow-md max-w-[88%]">
+                    <p class="text-cyan-900 font-extrabold mb-2 uppercase text-xs tracking-[0.16em]">DIRETTORE SCIENTIFICO</p>
+                    <p class="text-gray-800 leading-relaxed text-lg font-medium">Benvenuto nella riserva. Chiedimi regole, carte, icone, pause caffè, sponsor e progetti: consulto il database e ti rispondo come da regolamento.</p>
                 </div>
             </div>
 
             <!-- Loader (Hidden) -->
-            <div id="loader" class="hidden px-6 py-4 border-t border-gray-50 flex items-center justify-center gap-3">
-                <div class="text-sm text-green-800 font-bold uppercase tracking-widest">Analisi Dati</div>
+            <div id="loader" class="hidden px-6 py-4 border-t border-cyan-100 bg-[#f3fffb] flex items-center justify-center gap-3">
+                <div class="text-xs md:text-sm text-cyan-900 font-extrabold uppercase tracking-[0.2em]">Consulto archivio Ark Nova</div>
                 <div class="loading-animation">
                     <div class="dot"></div>
                     <div class="dot"></div>
@@ -122,28 +321,22 @@
             </div>
 
             <!-- Input Area -->
-            <div class="p-6 border-t border-gray-100 bg-white shadow-[0_-5px_15px_rgba(0,0,0,0.02)]">
-                <form id="chat-form" class="flex gap-4">
+            <div class="p-4 md:p-6 border-t border-cyan-100 bg-white/90 shadow-[0_-10px_28px_rgba(0,129,143,0.08)]">
+                <form id="chat-form" class="flex flex-col sm:flex-row gap-3 md:gap-4">
                     <input type="text" id="user-input" 
-                        class="ark-input flex-grow p-4 rounded-xl focus:outline-none focus:ring-4 focus:ring-green-100 placeholder-gray-400 transition-all font-medium"
+                        class="ark-input flex-grow p-4 rounded-xl focus:outline-none focus:ring-4 focus:ring-cyan-100 placeholder-gray-500 transition-all font-semibold"
                         placeholder="Cerca nel database Ark Nova...">
-                    <button type="submit" class="btn-ark text-white px-10 py-4 rounded-xl font-extrabold shadow-lg">
+                    <button type="submit" class="btn-ark text-white px-8 md:px-10 py-4 rounded-xl font-extrabold shadow-lg">
                         CONSULTA
                     </button>
                 </form>
             </div>
         </div>
 
-        <!-- Suggestions -->
-        <div class="mt-6 flex flex-wrap gap-2 justify-center">
-            <button onclick="fillInput('Quali sono le carte azione?')" class="text-xs bg-white border border-green-200 text-green-700 px-3 py-1 rounded-full hover:bg-green-50">Carte Azione</button>
-            <button onclick="fillInput('Quali animali hanno l\'icona Europa?')" class="text-xs bg-white border border-green-200 text-green-700 px-3 py-1 rounded-full hover:bg-green-50">Animali Europa</button>
-            <button onclick="fillInput('Come funziona il Coffee Break?')" class="text-xs bg-white border border-green-200 text-green-700 px-3 py-1 rounded-full hover:bg-green-50">Regola Coffee Break</button>
-        </div>
     </main>
 
-    <footer class="text-center p-4 text-gray-400 text-xs">
-        &copy; 2026 Ark Nova AI Assistant - Powered by Groq & LangChain
+    <footer class="text-center p-4 text-white/75 text-xs font-semibold">
+        &copy; 2026 Ark Nova AI Assistant
     </footer>
 
     <script>
@@ -157,17 +350,122 @@
             userInput.focus();
         }
 
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        }
+
+        function inlineMarkdown(text) {
+            return text
+                .replace(/`([^`]+)`/g, '<code>$1</code>')
+                .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*([^*]+)\*/g, '<em>$1</em>');
+        }
+
+        function renderMarkdown(text) {
+            const safe = escapeHtml(text || '').replace(/\r\n/g, '\n').trim();
+            if (!safe) return '';
+
+            const lines = safe.split('\n');
+            const html = [];
+            let listType = null;
+            let paragraph = [];
+
+            const closeParagraph = () => {
+                if (paragraph.length) {
+                    html.push(`<p>${inlineMarkdown(paragraph.join(' '))}</p>`);
+                    paragraph = [];
+                }
+            };
+
+            const closeList = () => {
+                if (listType) {
+                    html.push(`</${listType}>`);
+                    listType = null;
+                }
+            };
+
+            lines.forEach((rawLine) => {
+                const line = rawLine.trim();
+
+                if (!line) {
+                    closeParagraph();
+                    closeList();
+                    return;
+                }
+
+                if (/^---+$/.test(line)) {
+                    closeParagraph();
+                    closeList();
+                    html.push('<hr>');
+                    return;
+                }
+
+                const heading = line.match(/^(#{1,3})\s+(.+)$/);
+                if (heading) {
+                    closeParagraph();
+                    closeList();
+                    const level = heading[1].length;
+                    html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+                    return;
+                }
+
+                const bullet = line.match(/^[-*]\s+(.+)$/);
+                if (bullet) {
+                    closeParagraph();
+                    if (listType !== 'ul') {
+                        closeList();
+                        html.push('<ul>');
+                        listType = 'ul';
+                    }
+                    html.push(`<li>${inlineMarkdown(bullet[1])}</li>`);
+                    return;
+                }
+
+                const ordered = line.match(/^\d+\.\s+(.+)$/);
+                if (ordered) {
+                    closeParagraph();
+                    if (listType !== 'ol') {
+                        closeList();
+                        html.push('<ol>');
+                        listType = 'ol';
+                    }
+                    html.push(`<li>${inlineMarkdown(ordered[1])}</li>`);
+                    return;
+                }
+
+                closeList();
+                paragraph.push(line);
+            });
+
+            closeParagraph();
+            closeList();
+            return html.join('');
+        }
+
         function appendMessage(role, text) {
             const div = document.createElement('div');
-            div.className = role === 'ai' ? 'message-ai p-4 rounded-lg shadow-sm max-w-[85%]' : 'message-user p-4 rounded-lg shadow-sm max-w-[85%] self-end ml-auto';
+            div.className = role === 'ai'
+                ? 'message-ai p-5 rounded-r-2xl rounded-bl-2xl shadow-md max-w-[88%]'
+                : 'message-user p-5 rounded-l-2xl rounded-br-2xl shadow-md max-w-[88%] self-end ml-auto';
             
             const name = document.createElement('p');
-            name.className = role === 'ai' ? 'text-green-900 font-bold mb-1' : 'text-brown-900 font-bold mb-1 text-right';
-            name.innerText = role === 'ai' ? 'Assistente Zoo:' : 'Direttore:';
-            
-            const message = document.createElement('p');
-            message.className = 'text-gray-700 whitespace-pre-wrap';
-            message.innerText = text;
+            name.className = role === 'ai'
+                ? 'text-cyan-900 font-extrabold mb-2 uppercase text-xs tracking-[0.14em]'
+                : 'text-lime-800 font-extrabold mb-2 uppercase text-xs tracking-[0.14em] text-right';
+            name.innerText = role === 'ai' ? 'Archivio Zoo' : 'Player';
+
+            const message = document.createElement('div');
+            message.className = role === 'ai' ? 'markdown-body' : 'text-gray-800 leading-relaxed font-medium';
+            if (role === 'ai') {
+                message.innerHTML = renderMarkdown(text);
+            } else {
+                message.innerText = text;
+            }
             
             div.appendChild(name);
             div.appendChild(message);
@@ -199,7 +497,7 @@
                 const data = await response.json();
                 appendMessage('ai', data.answer);
             } catch (error) {
-                appendMessage('ai', 'Mi scusi direttore, ho avuto un problema nel consultare i dati. Riprovi tra poco.');
+                appendMessage('ai', 'Mi scusi, ho avuto un problema nel consultare i dati. Riprovi tra poco.');
                 console.error(error);
             } finally {
                 loader.classList.add('hidden');

@@ -13,27 +13,21 @@ from langchain_core.messages import ToolMessage
 from langchain_mcp_adapters.client import MultiServerMCPClient
 from langchain.agents import create_agent
 from langchain_groq import ChatGroq
+from langchain_openrouter import ChatOpenRouter
 
 load_dotenv()
-# Recuperiamo la URI dall'ambiente e puliamo
-DB_URI = os.getenv("DB_URI") 
+DB_URI = os.getenv("DB_URI", "postgresql://user:password@localhost:5433/db_destinazione")
 
-if not DB_URI:
-    # Questo log apparirà nei log di Railway se la variabile è vuota
-    print("ERRORE: Variabile DB_URI non trovata!", file=sys.stderr)
-
-
-# llm_gemini = ChatGoogleGenerativeAI(
+# llm = ChatGoogleGenerativeAI(
 #     model="gemini-2.5-flash", # o "gemini-1.5-pro" per analisi ancora più profonde
 #     temperature=0,
 #     vertexai=True,
 #     )
 
-llm = ChatGroq(
-    model=os.getenv("LLM_MODEL"),
+llm = ChatOpenRouter(
+    model="deepseek/deepseek-v4-flash",
     temperature=0,
-    streaming=True,
-    api_key=os.getenv("GROQ_KEY")
+    api_key=os.getenv("OPENROUTER_KEY")
 )
 
 # ─── AGENTE UNICO ────────────────────────────────────────────────────────────
@@ -45,17 +39,17 @@ async def agente_unico(domanda: str, db_map) -> str:
         {
             "cards": {
                 "transport": "stdio",
-                "command": "python3",
+                "command": sys.executable,
                 "args": ["mcp_ark.py"],
                 "env": {**os.environ, "DB_URI": DB_URI}
                 
             },
-            "rules": {
-                "transport": "stdio",
-                "command": "python3",
-                "args": ["-m", "graphify.serve", "graphify-out/graph.json"],
-                "env": os.environ
-            }
+            # "rules": {
+            #     "transport": "stdio",
+            #     "command": sys.executable,
+            #     "args": ["-m", "graphify.serve", "graphify-out/graph.json"],
+            #     "env": os.environ
+            # }
         }
         )
     
@@ -63,12 +57,11 @@ async def agente_unico(domanda: str, db_map) -> str:
     
     messaggi = [("system", f"""
         Sei un esperto del gioco da tavolo
-        Ark Nova, e conosci tutte le carte del gioco.
-        Il tuo compito è rispondere a domande sulle carte del gioco
+        Ark Nova, e conosci tutto del gioco.
         
         Hai accesso a:
         1) Tool SQL per query libere sulle carte, con accesso a tutte le tabelle del database (animali, sponsor, progetti di conservazione, punteggi finali...)
-        2) Grafo del regolamento per domande sulle regole, fasi di gioco, icone e meccaniche.
+        2) Tool Embeddings per interrogare il regolamento del gioco.
         
         Mappa del Database: {db_map}
         IMPORTANTE: 
@@ -98,7 +91,7 @@ async def main():
     with open("db_map.md", "r") as f:
         db_map = f.read()
         
-    domanda = f"""quanti tipi di carte azioni esistono??"""
+    domanda = f"""cosa succede durante la pausa caffè??"""
 
     risposta = await agente_unico(domanda, db_map)
     print("Risposta finale:")
