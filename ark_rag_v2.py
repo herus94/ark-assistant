@@ -72,6 +72,9 @@ async def agente_unico(domanda: str, db_map) -> str:
         Per gli animali filtrati per tipo, preferisci get_animals_by_type: types può contenere valori come 'Sea Animal 2'. Per sponsor filtrati per icona ottenuta, preferisci get_sponsors_by_icon: icons_gained può contenere valori combinati come '1 Herbivore + 1 Rock'.
         Quando restituisci elenchi di carte o dati comparabili, usa tabelle Markdown valide: una riga header, una riga separatrice con almeno tre trattini per colonna, e una riga per record. Non mettere testo extra dentro le righe della tabella.
         
+        Se la domanda è strategica, non inventare una build generica. Chiedi o usa il contesto minimo: mano iniziale, progetti base visibili, mappa, numero giocatori. Se mancano dati, dai consigli generali ma segnala che sono euristiche, non regole.
+        Non essere troppo prolisso: rispondi in modo chiaro e sintetico, evitando di dilungarti su dettagli non richiesti. Se la domanda è semplice, rispondi in modo diretto senza aggiungere spiegazioni lunghe. Se la domanda è complessa, suddividi la risposta in punti chiari e concisi.
+        
         """),
         ("human", domanda)]
 
