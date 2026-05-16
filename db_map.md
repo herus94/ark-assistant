@@ -16,6 +16,10 @@
     
     4. Tabella 'final_scoring':
        - Colonne: card_id (INT), name (STR), required_tiers (JSON), points_tiers (JSON), additional_details
+
+    5. Tabella 'abilities':
+       - Colonne: ability_name (STR), normalized_name (STR), effect (STR), expansion (STR)
+       - Nota: contiene la descrizione testuale delle abilità degli animali. I tool animali restituiscono anche `ability_details`, cioè le abilità dell'animale arricchite con effect ed expansion quando disponibili.
     
     ### REGOLE DI TRADUZIONE E RICERCA
     - Il database è in INGLESE. Se l'utente chiede in Italiano, traduci i termini tecnici prima di fare la query.

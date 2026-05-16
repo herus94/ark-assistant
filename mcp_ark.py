@@ -71,6 +71,42 @@ def _normalize_continent(continent: str) -> str:
 def _normalize_animal_type(animal_type: str) -> str:
     return ANIMAL_TYPE_ALIASES.get(animal_type.strip().lower(), animal_type.strip())
 
+
+ANIMAL_ABILITY_DETAILS_SQL = """
+LEFT JOIN LATERAL (
+    SELECT jsonb_agg(
+        jsonb_strip_nulls(
+            jsonb_build_object(
+                'raw_name', ability_parts.raw_ability,
+                'ability_name', ab.ability_name,
+                'effect', ab.effect,
+                'expansion', ab.expansion
+            )
+        )
+        ORDER BY ability_parts.ordinality
+    ) AS ability_details
+    FROM (
+        SELECT
+            (ability_item.ability_index * 1000 + part.part_index) AS ordinality,
+            trim(part.value) AS raw_ability,
+            lower(
+                regexp_replace(
+                    regexp_replace(trim(part.value), '\\s*:\\s*', ': ', 'g'),
+                    '\\s+',
+                    ' ',
+                    'g'
+                )
+            ) AS normalized_name
+        FROM jsonb_array_elements_text(a.abilities::jsonb)
+            WITH ORDINALITY AS ability_item(value, ability_index)
+        CROSS JOIN LATERAL regexp_split_to_table(ability_item.value, '\\s*(?:/|\\n|,)\\s*')
+            WITH ORDINALITY AS part(value, part_index)
+        WHERE lower(trim(part.value)) <> 'none'
+    ) AS ability_parts
+    LEFT JOIN abilities ab ON ab.normalized_name = ability_parts.normalized_name
+) AS ability_lookup ON TRUE
+"""
+
 @mcp.tool()
 def get_db_schemas():
     """
@@ -143,14 +179,25 @@ def get_animals_by_continent(continent: str, limit: int = 20, order_by: str = "c
     limit = max(1, min(int(limit), 100))
 
     query = text(f"""
-        SELECT card_id, name, cost, types, continents, enclosure, requirements, abilities, bonuses
-        FROM animals
+        SELECT
+            a.card_id,
+            a.name,
+            a.cost,
+            a.types,
+            a.continents,
+            a.enclosure,
+            a.requirements,
+            a.abilities,
+            COALESCE(ability_lookup.ability_details, '[]'::jsonb) AS ability_details,
+            a.bonuses
+        FROM animals a
+        {ANIMAL_ABILITY_DETAILS_SQL}
         WHERE EXISTS (
             SELECT 1
-            FROM jsonb_array_elements_text(continents::jsonb) AS c(value)
+            FROM jsonb_array_elements_text(a.continents::jsonb) AS c(value)
             WHERE c.value ILIKE :continent_prefix
         )
-        ORDER BY {order_by} {direction}, name ASC
+        ORDER BY a.{order_by} {direction}, a.name ASC
         LIMIT :limit
     """)
 
@@ -184,14 +231,25 @@ def get_animals_by_type(animal_type: str, limit: int = 20, order_by: str = "cost
     limit = max(1, min(int(limit), 100))
 
     query = text(f"""
-        SELECT card_id, name, cost, types, continents, enclosure, requirements, abilities, bonuses
-        FROM animals
+        SELECT
+            a.card_id,
+            a.name,
+            a.cost,
+            a.types,
+            a.continents,
+            a.enclosure,
+            a.requirements,
+            a.abilities,
+            COALESCE(ability_lookup.ability_details, '[]'::jsonb) AS ability_details,
+            a.bonuses
+        FROM animals a
+        {ANIMAL_ABILITY_DETAILS_SQL}
         WHERE EXISTS (
             SELECT 1
-            FROM jsonb_array_elements_text(types::jsonb) AS t(value)
+            FROM jsonb_array_elements_text(a.types::jsonb) AS t(value)
             WHERE t.value ILIKE :type_prefix
         )
-        ORDER BY {order_by} {direction}, name ASC
+        ORDER BY a.{order_by} {direction}, a.name ASC
         LIMIT :limit
     """)
 
