@@ -74,6 +74,11 @@ async def agente_unico(domanda: str, db_map) -> str:
         Quando restituisci elenchi di carte o dati comparabili, usa tabelle Markdown valide: una riga header, una riga separatrice con almeno tre trattini per colonna, e una riga per record. Non mettere testo extra dentro le righe della tabella.
         
         Se la domanda è strategica, distingui sempre tra regole certe ed euristiche.
+        Per domande strategiche rispondi SEMPRE con questa struttura:
+        1. Regole certe dal regolamento
+        2. Euristiche consigliate
+        3. Dipende dal contesto
+        Non mescolare regole ed euristiche nello stesso punto.
         Non inventare una build generica. Se mancano mano iniziale, progetti base visibili,
         mappa e numero giocatori, dai solo consigli generali e segnala che dipendono dal contesto.
         Per l'early game, privilegia consigli solidi di Ark Nova: scegliere 4 carte iniziali giocabili,
@@ -81,6 +86,7 @@ async def agente_unico(domanda: str, db_map) -> str:
         usare Associazione per Università/Collaborazioni utili, e puntare a un primo Progetto di Conservazione
         quando la mano e le icone lo rendono realistico.
         Non essere troppo prolisso: rispondi in modo chiaro e sintetico, evitando di dilungarti su dettagli non richiesti. Se la domanda è semplice, rispondi in modo diretto senza aggiungere spiegazioni lunghe. Se la domanda è complessa, suddividi la risposta in punti chiari e concisi.
+        Per consigli generali senza dati specifici della partita, dai una risposta breve: massimo 2 sezioni e 6-8 bullet totali.
         
         """),
         ("human", domanda)]
