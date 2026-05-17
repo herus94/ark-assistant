@@ -99,8 +99,25 @@ async def agente_unico(domanda: str, db_map) -> str:
     # Passiamo il dizionario con la chiave "messages" come richiesto da LangGraph
     risultato = await agent.ainvoke({"messages": messaggi})
     
-    # Restituiamo il contenuto dell'ultimo messaggio (la risposta finale dell'AI)
-    return risultato["messages"][-1].content
+    # Restituiamo il contenuto dell'ultimo messaggio. Alcuni provider possono
+    # chiudere una run dopo i tool con un messaggio finale vuoto: in quel caso
+    # chiediamo al modello una sintesi finale senza ulteriori tool.
+    risposta_finale = risultato["messages"][-1].content
+    if isinstance(risposta_finale, str) and risposta_finale.strip():
+        return risposta_finale
+
+    fallback_messages = [
+        *risultato["messages"],
+        HumanMessage(content=(
+            "Hai già ricevuto i risultati dei tool. Ora rispondi alla domanda "
+            "dell'utente in italiano, in modo sintetico, senza chiamare altri tool. "
+            "Se la domanda è strategica, usa la struttura richiesta: "
+            "1. Regole certe dal regolamento; 2. Euristiche consigliate; "
+            "3. Dipende dal contesto."
+        )),
+    ]
+    fallback = await llm.ainvoke(fallback_messages)
+    return fallback.content
 
 # ─── MAIN ────────────────────────────────────────────────────────────────────
 
